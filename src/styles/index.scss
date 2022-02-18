@@ -1,1 +1,56 @@
+@import url(../fonts/Mont/stylesheet.css);
+@import url(../fonts/lighthaus/style.css);
+@import './variables';
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: $primary;
+  font-family: 'Mont', sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: 1px solid transparent;
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+@import './header';
 @import './home';

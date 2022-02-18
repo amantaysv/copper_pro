@@ -1,0 +1,110 @@
+.header {
+  background: $gold-green;
+  color: $secondary;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+
+  &.transparent {
+    background: none;
+  }
+
+  .navbar {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 53px;
+    column-gap: 77px;
+
+    &-logo {
+      max-width: 160px;
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &-nav {
+      display: flex;
+      align-items: center;
+      column-gap: 50px;
+      flex: 1;
+
+      .nav-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .nav-link {
+        position: relative;
+        font-size: 16px;
+        padding: 7px;
+        -webkit-background-clip: text;
+        color: #E4A16F;
+        font-weight: 400;
+
+        &:hover {
+          &::before {
+            background: linear-gradient(92.09deg, #5E3928 -79.4%, #E4A16F 84.12%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 600;
+          }
+
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: 3px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(92.09deg, #5E3928 -79.4%, #E4A16F 84.12%)
+          }
+        }
+
+        &::before {
+          content: attr(data-text);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+          height: 100%;
+          padding: 7px;
+          background: #fff;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-weight: 400;
+        }
+      }
+    }
+
+    &-icons {
+      display: flex;
+      column-gap: 20px;
+      color: $primary;
+
+      .nav-icon {
+        width: 50px;
+        height: 80px;
+        padding: 13px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        background-color: #fff;
+
+        &__count {
+          color: #E4A16F;
+          font-weight: 900;
+          font-size: 25px;
+          line-height: 1;
+        }
+      }
+    }
+
+  }
+}
