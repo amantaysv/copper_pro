@@ -17,11 +17,12 @@
     width: 100vw;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.5);
+    display: none;
 
     .modal-content{
-        background-color: #f4f4f4;
+        background: rgba(255, 255, 255, 0.95);
         width: 1200px;
-        box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5), 0 7px 20px 0 rgba(0,0,0,0.17);
+        height: 620px;
         animation-name: modalopen;
         animation-duration: 1s;
     }
@@ -32,32 +33,35 @@
         padding: 10px;
     
         .logo{
-            width: 110px;
-            margin: 10px 0 10px 0;
+            width: 100px;
+            margin: 5px 0 5px 0;
         }
     }
     
     .modal-body{
-        padding: 10px 20px;
+        padding: 20px 20px;
         text-align: center;
         position: relative;
     
         &__img1{
-            padding-top: 40px;
-            margin-left: 120px;
+            width: 150px;
+            padding-top: 35px;
+            margin-left: 80px;
         }
     
         &__img2{
             position: absolute;
-            left: 420px;
-            top: 152px;
+            width: 150px;
+            left: 485px;
+            top: 110px;
         }
+
     
         h2{
             font-family: Lighthaus;
             font-style: normal;
             font-weight: normal;
-            font-size: 40px;
+            font-size: 30px;
             color: #031412;
             margin: 0;
             padding: 0;
@@ -66,7 +70,7 @@
         p{
             font-family: Mont;
             font-style: normal;
-            font-size: 23px;
+            font-size: 18px;
             color: #031412;
             margin: 0;
             padding: 20px 0 20px 0;
@@ -75,20 +79,150 @@
         &__button{
             background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
             width: 300px;
-            padding: 1em 2em;
+            height: 40px;
+            padding: 0 2em;
             color: #fff;
-            margin-bottom: 70px;
+            margin-bottom: 60px;
     
             &:hover{
                 background: #333;
-        }
+            }
     
+        }
+
+        .loggin{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            height: 450px;
+
+            .main-btn{
+                position: absolute;
+                width: 200px;
+                height: 30px;
+                left: 130px;
+                top: 30px;
+                background: #FFFFFF;
+                border: 1px solid #A1A1A1;
+                font-family: Mont;
+                font-weight: 600;
+                font-size: 14px;
+                text-align: center;
+                color: #A1A1A1;
+            }
+
+            div{
+                width: 300px;
+                background: #fff;
+            }
+
+            h2{
+                font-family: Lighthaus;
+                font-size: 26px;
+                text-align: center;
+                color: #031412;
+                margin: 20px 0 15px 0;
+            }
+
+            &__input{
+                max-width: 240px;
+                width: 100%;
+                margin-bottom: 20px;
+                min-height: 30px;
+                font-family: Mont;
+                font-size: 14px;
+                padding: 0 0 0 10px;
+                color: #A1A1A1;
+                border: 1px solid #A1A1A1;
+
+                &::placeholder {
+                    color: #78808F;
+                }
+            }
+            &__input2{
+                max-width: 240px;
+                width: 100%;
+                min-height: 30px;
+                font-family: Mont;
+                font-size: 14px;
+                padding: 0 0 0 10px;
+                color: #A1A1A1;
+                border: 1px solid #A1A1A1;
+
+                &::placeholder {
+                    color: #78808F;
+                }
+            }
+            &__input3{
+                max-width: 240px;
+                width: 100%;
+                margin: 20px 0 20px 0;
+                min-height: 30px;
+                font-family: Mont;
+                font-size: 14px;
+                padding: 0 0 0 10px;
+                color: #A1A1A1;
+                border: 1px solid #A1A1A1;
+
+                &::placeholder {
+                    color: #78808F;
+                }
+            }
+
+            P{
+                font-family: Mont;
+                font-size: 14px;
+                text-align: center;
+                text-decoration-line: underline;
+                color: #5E3928;
+                
+            }
+
+            &__button{
+                background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+                max-width: 241px;
+                width: 100%;
+                color: #fff;
+                padding: 5px 0 5px 0;
+                font-size: 14px;
+                border: 0;
+        
+                &:hover{
+                    background: #333;
+                }
+            }
+            .question{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 300px;
+                padding: 0;
+                margin: 20px 0 0 0px;
+                background: linear-gradient(285.45deg, #0B3F37 38.27%, #CB8D62 141.81%);
+
+                .text{
+                    font-family: Mont;
+                    font-size: 14px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                }
+                .text1{
+                    font-family: Mont;
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 14px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                }
+            }
         }
     }
     
     .modal-footer{
         background: linear-gradient(285.45deg, #0B3F37 38.27%, #CB8D62 141.81%);
-        padding: 5px;
+        padding: 10px;
         text-align: center;
     
         .logo{
@@ -97,8 +231,8 @@
         }
     
         p{
-            margin-bottom: 20px;
-            font-size: 12px;
+            margin-bottom: 10px;
+            font-size: 10px;
             text-align: center;
             color: #ADADAD;
         }
@@ -123,5 +257,3 @@
     
 }
     
-    
-
