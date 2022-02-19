@@ -140,15 +140,15 @@ button {
 .header {
   background: linear-gradient(285.45deg, #0B3F37 38.27%, #CB8D62 141.81%);
   color: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
   width: 100%;
 }
 
 .header.transparent {
   background: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .header .navbar {
@@ -390,3 +390,88 @@ button {
   line-height: 74.9%;
   text-align: right;
 }
+
+.aboutHome {
+  padding-top: 40px;
+}
+
+.aboutHome__nav {
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  font-family: "Mont", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 96.4%;
+  color: #031412;
+}
+
+.aboutHome__nav p {
+  font-weight: bold;
+}
+
+.aboutHome__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutHome__title {
+  font-family: 'Lighthaus', sans-serif;
+  font-size: 100px;
+  font-weight: normal;
+  line-height: 74.9%;
+  color: #031412;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.aboutHome__title::before {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 623px;
+  height: 1px;
+  background-color: #031412;
+}
+
+.aboutHome__subtitle {
+  padding-left: 75px;
+  width: 100%;
+  font-family: 'Mont', sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 96.4%;
+  position: relative;
+  background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.aboutHome__subtitle::before {
+  content: url(../images/about-us/union.svg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.aboutHome__subtitle::after {
+  content: url(../images/about-us/union.svg);
+  position: absolute;
+  right: 50px;
+  bottom: -10px;
+}
+/*# sourceMappingURL=index.css.map */
