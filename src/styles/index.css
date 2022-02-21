@@ -403,113 +403,293 @@ button {
 }
 
 .modal {
-  display: none;
   position: fixed;
-  z-index: 1;
   left: 0;
   top: 0;
-  height: 100%;
-  width: 100%;
-  overflow: auto;
+  height: 100vw;
+  width: 100vw;
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.5);
+  display: none;
 }
 
-.modal-content {
-  background-color: #f4f4f4;
-  margin: 20% auto;
+.modal .modal-content {
+  background: rgba(255, 255, 255, 0.95);
   width: 1200px;
-  -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
-          box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.5), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  height: 620px;
   -webkit-animation-name: modalopen;
           animation-name: modalopen;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
 }
 
-.modal-header {
+.modal .modal-header {
   background: linear-gradient(285.45deg, #0B3F37 38.27%, #CB8D62 141.81%);
   text-align: center;
   padding: 10px;
 }
 
-.modal-header .logo {
-  width: 110px;
-  margin: 10px 0 10px 0;
+.modal .modal-header .logo {
+  width: 100px;
+  margin: 5px 0 5px 0;
 }
 
-.modal-body {
-  padding: 10px 20px;
+.modal .modal-body {
+  padding: 20px 20px;
   text-align: center;
   position: relative;
 }
 
-.modal-body__img1 {
-  padding-top: 40px;
-  margin-left: 120px;
+.modal .modal-body__img1 {
+  width: 150px;
+  padding-top: 35px;
+  margin-left: 80px;
 }
 
-.modal-body__img2 {
+.modal .modal-body__img2 {
   position: absolute;
-  left: 420px;
-  top: 152px;
+  width: 150px;
+  left: 485px;
+  top: 110px;
 }
 
-.modal-body h2 {
+.modal .modal-body h2 {
   font-family: Lighthaus;
   font-style: normal;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 30px;
   color: #031412;
   margin: 0;
   padding: 0;
 }
 
-.modal-body p {
+.modal .modal-body p {
   font-family: Mont;
   font-style: normal;
-  font-size: 23px;
+  font-size: 18px;
   color: #031412;
   margin: 0;
   padding: 20px 0 20px 0;
 }
 
-.modal-body__button {
+.modal .modal-body__button {
   background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
   width: 300px;
-  padding: 1em 2em;
+  height: 40px;
+  padding: 0 2em;
   color: #fff;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 
-.modal-body__button:hover {
+.modal .modal-body__button:hover {
   background: #333;
 }
 
-.modal-footer {
+.modal .modal-body .loggin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 0;
+  height: 450px;
+}
+
+.modal .modal-body .loggin .main-btn {
+  position: absolute;
+  width: 200px;
+  height: 30px;
+  left: 130px;
+  top: 30px;
+  background: #FFFFFF;
+  border: 1px solid #A1A1A1;
+  font-family: Mont;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #A1A1A1;
+}
+
+.modal .modal-body .loggin div {
+  width: 300px;
+  background: #fff;
+}
+
+.modal .modal-body .loggin h2 {
+  font-family: Lighthaus;
+  font-size: 26px;
+  text-align: center;
+  color: #031412;
+  margin: 20px 0 15px 0;
+}
+
+.modal .modal-body .loggin__input {
+  max-width: 240px;
+  width: 100%;
+  margin-bottom: 20px;
+  min-height: 30px;
+  font-family: Mont;
+  font-size: 14px;
+  padding: 0 0 0 10px;
+  color: #A1A1A1;
+  border: 1px solid #A1A1A1;
+}
+
+.modal .modal-body .loggin__input::-webkit-input-placeholder {
+  color: #78808F;
+}
+
+.modal .modal-body .loggin__input:-ms-input-placeholder {
+  color: #78808F;
+}
+
+.modal .modal-body .loggin__input::-ms-input-placeholder {
+  color: #78808F;
+}
+
+.modal .modal-body .loggin__input::placeholder {
+  color: #78808F;
+}
+
+.modal .modal-body .loggin__input2 {
+  max-width: 240px;
+  width: 100%;
+  min-height: 30px;
+  font-family: Mont;
+  font-size: 14px;
+  padding: 0 0 0 10px;
+  color: #A1A1A1;
+  border: 1px solid #A1A1A1;
+}
+
+.modal .modal-body .loggin__input2::-webkit-input-placeholder {
+  color: #78808F;
+}
+
+.modal .modal-body .loggin__input2:-ms-input-placeholder {
+  color: #78808F;
+}
+
+.modal .modal-body .loggin__input2::-ms-input-placeholder {
+  color: #78808F;
+}
+
+.modal .modal-body .loggin__input2::placeholder {
+  color: #78808F;
+}
+
+.modal .modal-body .loggin__input3 {
+  max-width: 240px;
+  width: 100%;
+  margin: 20px 0 20px 0;
+  min-height: 30px;
+  font-family: Mont;
+  font-size: 14px;
+  padding: 0 0 0 10px;
+  color: #A1A1A1;
+  border: 1px solid #A1A1A1;
+}
+
+.modal .modal-body .loggin__input3::-webkit-input-placeholder {
+  color: #78808F;
+}
+
+.modal .modal-body .loggin__input3:-ms-input-placeholder {
+  color: #78808F;
+}
+
+.modal .modal-body .loggin__input3::-ms-input-placeholder {
+  color: #78808F;
+}
+
+.modal .modal-body .loggin__input3::placeholder {
+  color: #78808F;
+}
+
+.modal .modal-body .loggin P {
+  font-family: Mont;
+  font-size: 14px;
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #5E3928;
+}
+
+.modal .modal-body .loggin__button {
+  background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+  max-width: 241px;
+  width: 100%;
+  color: #fff;
+  padding: 5px 0 5px 0;
+  font-size: 14px;
+  border: 0;
+}
+
+.modal .modal-body .loggin__button:hover {
+  background: #333;
+}
+
+.modal .modal-body .loggin .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  padding: 0;
+  margin: 20px 0 0 0px;
   background: linear-gradient(285.45deg, #0B3F37 38.27%, #CB8D62 141.81%);
-  padding: 5px;
+}
+
+.modal .modal-body .loggin .question .text {
+  font-family: Mont;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.modal .modal-body .loggin .question .text1 {
+  font-family: Mont;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.modal .modal-footer {
+  background: linear-gradient(285.45deg, #0B3F37 38.27%, #CB8D62 141.81%);
+  padding: 10px;
   text-align: center;
 }
 
-.modal-footer .logo {
+.modal .modal-footer .logo {
   width: 100px;
   margin: 10px 0 5px 0;
 }
 
-.modal-footer p {
-  margin-bottom: 20px;
-  font-size: 12px;
+.modal .modal-footer p {
+  margin-bottom: 10px;
+  font-size: 10px;
   text-align: center;
   color: #ADADAD;
 }
 
-.closeBtn {
+.modal .closeBtn {
   color: #fff;
   float: right;
   font-size: 30px;
 }
 
-.closeBtn:hover, .closeBtn:focus {
+.modal .closeBtn:hover, .modal .closeBtn:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -532,3 +712,4 @@ button {
     opacity: 1;
   }
 }
+/*# sourceMappingURL=index.css.map */
