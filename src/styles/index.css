@@ -845,6 +845,10 @@ button {
   background: url(../images/catalog/bg_header.png) !important;
 }
 
+.catalog .mesto {
+  font-size: 23px;
+}
+
 .catalog__title {
   margin-top: 23px;
   margin-bottom: 31px;
@@ -871,9 +875,7 @@ button {
 }
 
 .catalog__tab {
-  -webkit-box-flex: 1 !important;
-      -ms-flex: 1 !important;
-          flex: 1 !important;
+  width: calc(25% - 30px);
   position: relative;
   min-height: 147px;
   border-radius: 10px;
@@ -949,6 +951,7 @@ button {
 
 .catalog .search__input {
   height: 40px;
+  width: 100%;
   border: none;
   border-bottom: 1px black solid;
   padding: 0;
@@ -1005,6 +1008,10 @@ button {
   position: relative;
 }
 
+.catalog__card img {
+  width: 100%;
+}
+
 .catalog__card .heart {
   position: absolute;
   top: 0;
@@ -1047,3 +1054,4 @@ button {
   /* identical to box height, or 29px */
   color: #031412;
 }
+/*# sourceMappingURL=index.css.map */

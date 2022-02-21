@@ -4,7 +4,9 @@
   }
 
   margin-top: 160px;
-
+  .mesto{
+    font-size: 23px;
+  }
   &__title {
     margin-top: 23px;
     margin-bottom: 31px;
@@ -24,7 +26,7 @@
     row-gap: 30px;
   }
   &__tab {
-    flex: 1 !important;
+    width: calc(25% - 30px);
     position: relative;
     min-height: 147px;
     border-radius: 10px;
@@ -81,6 +83,7 @@
 
   .search__input {
     height: 40px;
+    width: 100%;
     border: none;
     border-bottom: 1px black solid;
     padding: 0;
@@ -127,7 +130,9 @@
   &__card {
     max-width: 446px;
     position: relative;
-
+    img{
+      width: 100%;
+    }
     .heart {
       position: absolute;
       top: 0;
@@ -140,6 +145,7 @@
         background: url(../images/catalog/backg.png) center/cover no-repeat;
 
       }
+     
     }
 
     &__text {
@@ -172,4 +178,7 @@
 
     color: #031412;
   }
+}
+@media(max-width: 720px){
+
 }
