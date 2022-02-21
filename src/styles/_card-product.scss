@@ -1,15 +1,11 @@
 @import './variables';
 
-.header {
-    background: $gold-green;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: block;
-
-    .transparent {
-        background: none;
+.basket {
+    position: relative;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    &__container {
+       
     }
-
 }
