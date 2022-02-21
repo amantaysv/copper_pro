@@ -6,7 +6,8 @@
         "_variables.scss",
         "_header.scss",
         "_home.scss",
-        "_modal.scss"
+        "_modal.scss",
+        "_catalog.scss"
     ],
     "names": [],
     "file": "index.css"

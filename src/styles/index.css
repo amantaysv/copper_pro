@@ -836,3 +836,201 @@ button {
   font-size: 16px;
   font-weight: 600;
 }
+
+.catalog {
+  margin-top: 160px;
+}
+
+.catalog__header {
+  background: url(../images/catalog/bg_header.png) !important;
+}
+
+.catalog__title {
+  margin-top: 23px;
+  margin-bottom: 31px;
+  font-family: Lighthaus;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 105.9%;
+  color: #031412;
+}
+
+.catalog__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 30px;
+}
+
+.catalog__tabs .tab {
+  -webkit-box-flex: 1 !important;
+      -ms-flex: 1 !important;
+          flex: 1 !important;
+  position: relative;
+  min-height: 147px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.catalog__tabs .tab:nth-child(1) {
+  background: url(../images/catalog/image12.png) center/cover no-repeat;
+}
+
+.catalog__tabs .tab:nth-child(2) {
+  background: url(../images/catalog/image9.png) center/cover no-repeat;
+}
+
+.catalog__tabs .tab:nth-child(3) {
+  background: url(../images/catalog/image10.png) center/cover no-repeat;
+}
+
+.catalog__tabs .tab:nth-child(4) {
+  background: url(../images/catalog/image14.png) center/cover no-repeat;
+}
+
+.catalog__tabs .tab h3 {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  z-index: 3;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#0000007e));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), #0000007e);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.catalog__tabs .tab h3:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#CB8D62));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), #CB8D62);
+}
+
+.catalog__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 60px 0 40px;
+}
+
+.catalog .search__plase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.catalog .search__input {
+  height: 40px;
+  border: none;
+  border-bottom: 1px black solid;
+  padding: 0 0 0 10px;
+  font-size: 23px;
+}
+
+.catalog .search__input:focus {
+  border: none;
+}
+
+.catalog .search__btn {
+  height: 40px;
+  width: 40px;
+  border: none;
+  background: none;
+  border-bottom: 1px black solid;
+}
+
+.catalog .sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  row-gap: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.catalog__card {
+  max-width: 446px;
+  position: relative;
+}
+
+.catalog__card .heart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 63px;
+  background: url(../images/catalog/no-backg.png) center/cover no-repeat;
+}
+
+.catalog__card .heart:hover {
+  background: url(../images/catalog/backg.png) center/cover no-repeat;
+}
+
+.catalog__card__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 36px 0;
+}
+
+.catalog .description {
+  font-family: Mont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 96.4%;
+  max-width: 257px;
+  color: #031412;
+}
+
+.catalog .price {
+  font-family: Mont;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 96.4%;
+  /* identical to box height, or 29px */
+  color: #031412;
+}
