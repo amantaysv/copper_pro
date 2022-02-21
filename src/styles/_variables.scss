@@ -1,0 +1,77 @@
+$gold: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+$gold-green: linear-gradient(285.45deg, #0B3F37 38.27%, #CB8D62 141.81%);
+$primary: #031412;
+$secondary: #fff;
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+.ellipses {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+
+  span {
+    position: absolute;
+    width: calc(50% + 200px);
+    padding-bottom: calc(50% + 200px);
+    border-radius: 50%;
+    border: 1px solid rgba($color: $secondary, $alpha: 0.15);
+  }
+
+  span:nth-child(1) {
+    top: 50%;
+    left: 0;
+    transform: translate(-150px, -50%);
+  }
+
+  span:nth-child(2) {
+    top: 50%;
+    right: 0;
+    transform: translate(150px, -50%);
+  }
+
+  span:nth-child(3) {
+    top: 0;
+    left: 0;
+    transform: translate(-40%, -40%);
+  }
+
+  span:nth-child(4) {
+    top: 0;
+    right: 0;
+    transform: translate(40%, -40%);
+  }
+
+  span:nth-child(5) {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 60%);
+  }
+}
+
+.btn-gold {
+  background: $gold;
+  color: $secondary;
+  border: none;
+}
+
+.btn-large {
+  max-width: 327px;
+  width: 100%;
+  height: 50px;
+}
