@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-/* No CSS *//*# sourceMappingURL=index.css.map */
-=======
 @import url(../fonts/Mont/stylesheet.css);
 @import url(../fonts/lighthaus/style.css);
 .container {
@@ -715,8 +712,220 @@ button {
     opacity: 1;
   }
 }
-<<<<<<< HEAD
->>>>>>> origin/home
-=======
+
+.header {
+  position: static;
+}
+
+.cardochki {
+  padding: 30px;
+}
+
+.cardochki__title {
+  font-family: "Mont";
+  font-weight: 400;
+  font-size: 18px;
+  color: #031412;
+}
+
+.cardochki__title span {
+  font-weight: 600;
+}
+
+.cardochki__feature {
+  padding: 20px;
+  position: relative;
+}
+
+.cardochki__feature .box {
+  position: absolute;
+  right: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 450px;
+}
+
+.cardochki__feature .box .description {
+  position: relative;
+  padding: 20px;
+}
+
+.cardochki__feature .box .description::before {
+  content: '';
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  border: 1px solid #E6E8E7;
+}
+
+.cardochki__feature .box .description h2 {
+  font-family: "Mont";
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #031412;
+  margin-bottom: 20px;
+}
+
+.cardochki__feature .box .description p {
+  font-family: "Mont";
+  font-size: 16px;
+  font-weight: none;
+  color: #031412;
+}
+
+.cardochki__feature .box :nth-child(1) {
+  font-family: " Lighthaus";
+  font-size: 40px;
+  color: #031412;
+}
+
+.cardochki__feature .box .inventory {
+  position: relative;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 200px;
+          column-gap: 200px;
+  margin-bottom: 60px;
+}
+
+.cardochki__feature .box .inventory::before {
+  content: '';
+  top: 50px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  border: 1px solid #E6E8E7;
+}
+
+.cardochki__feature .box .inventory :nth-child(1) {
+  font-family: " Mont";
+  font-weight: 800;
+  font-size: 16px;
+  color: #4B7159;
+}
+
+.cardochki__feature .box .inventory :nth-child(2) {
+  font-family: "Mont";
+  font-size: 16px;
+  color: #031412;
+}
+
+.cardochki__feature .box .inventory :nth-child(2) span {
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+.ellipses {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+}
+
+.ellipses span {
+  position: absolute;
+  width: calc(50% + 200px);
+  padding-bottom: calc(50% + 200px);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.ellipses span:nth-child(1) {
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(-150px, -50%);
+          transform: translate(-150px, -50%);
+}
+
+.ellipses span:nth-child(2) {
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(150px, -50%);
+          transform: translate(150px, -50%);
+}
+
+.ellipses span:nth-child(3) {
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-40%, -40%);
+          transform: translate(-40%, -40%);
+}
+
+.ellipses span:nth-child(4) {
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(40%, -40%);
+          transform: translate(40%, -40%);
+}
+
+.ellipses span:nth-child(5) {
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 60%);
+          transform: translate(-50%, 60%);
+}
+
+.btn-gold {
+  background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+  color: #fff;
+  border: none;
+}
+
+.btn-large {
+  max-width: 327px;
+  width: 100%;
+  height: 50px;
+}
+
+.basket {
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.basket__container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=index.css.map */
->>>>>>> origin/master
