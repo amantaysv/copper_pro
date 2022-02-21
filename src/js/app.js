@@ -1,7 +1,7 @@
 //get modal element
 var modal = document.getElementById('modal');
 var modalBtn = document.getElementById('modalBtn');
-
+console.log(modalBtn);
 //get close btn
 var closeBtn = document.getElementsByClassName('closeBtn')[0];
 
