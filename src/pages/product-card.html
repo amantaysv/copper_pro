@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../styles/index.css">
 </head>
+
 <body>
-    <h1>hey guys</h1>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar-logo">
+                    <img src="/src/images/general/logo.svg" alt="logotype">
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" data-text="Каталог" class="nav-link">Каталог</a></li>
+                    <li class="nav-item"><a href="#" data-text="Новости" class="nav-link">Новости</a></li>
+                    <li class="nav-item"><a href="#" data-text="Доставка" class="nav-link">Доставка</a></li>
+                    <li class="nav-item"><a href="#" data-text="О нас" class="nav-link">О нас</a></li>
+                    <li class="nav-item"><a href="#" data-text="Контакты" class="nav-link">Контакты</a></li>
+                </ul>
+                <ul class="navbar-icons">
+                    <li class="nav-icon"><a href="#"><img src="../images/header/heart.svg" alt="heart icon"></a></li>
+                    <li class="nav-icon"><a href="#"><img src="../images/header/shopping-cart.svg" alt="user icon"></a></li>
+                    <li class="nav-icon">
+                        <span class="nav-icon__count">1</span>
+                        <a href="#"><img src="../images/header/user.svg" alt="shopping cart icon"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="cardochki">
+        <div class="container">
+
+            <div class="name">
+                <p class="cardochki__title">Главная / Каталог / <span>Дистиллятор для получения гидролата 8л</span> </p>
+
+            </div>
+            <div class="cardochki__feature">
+                <div class="box">
+                     <p c> Дистиллятор для получения гидролата 8л</p>
+                     <div class="inventory">
+                           <p><img src="../images/producrcard/tick.svg" alt=""> В наличии</p>
+                <p>Артикул: <span>CP-0803</span> </p>
+                     </div>
+              <div class="description">
+                  <h2>Описание</h2>
+                  <p>Медный дистиллятор «Феникс» станет Вашим надёжным помощником и проводником в мир дистилляции и красоты, с которым Вы легко сможете получать свои любимые гидролаты или алкогольные напитки.</p>
+              </div>
+              <div class="price">
+                <div class="stepper stepper--style-1 js-spinner">
+                    <input autofocus type="number" min="0" max="100" step="1" value="0" class="stepper__input">
+                    <div class="stepper__controls">
+                        <button type="button" spinner-button="up">+</button>
+                        <button type="button" spinner-button="down">−</button>
+                    </div>
+                </div>
+                
+              </div>
+                </div>
+               
+            </div>
+        </div>
+
+    </section>
+<script src="../js/stepper.js"></script>
 </body>
+
 </html>
