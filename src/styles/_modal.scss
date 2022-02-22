@@ -66,7 +66,6 @@
 
         h2 {
             font-family: Lighthaus;
-            font-style: normal;
             font-weight: normal;
             font-size: 30px;
             color: #031412;
@@ -75,8 +74,6 @@
         }
 
         p {
-            font-family: Mont;
-            font-style: normal;
             font-size: 18px;
             color: #031412;
             margin: 0;
@@ -105,41 +102,40 @@
             margin: 0;
             height: 450px;
 
-            .main-btn {
+            .backToMain {
                 position: absolute;
-                width: 200px;
-                height: 30px;
-                left: 130px;
+                width: 250px;
+                height: 50px;
+                left: 100px;
                 top: 30px;
                 background: #FFFFFF;
                 border: 1px solid #A1A1A1;
-                font-family: Mont;
                 font-weight: 600;
-                font-size: 14px;
+                font-size: 16px;
                 text-align: center;
                 color: #A1A1A1;
+                padding: 15px 0 15px 0;
             }
 
             div {
-                width: 300px;
+                width: 350px;
                 background: #fff;
             }
 
             h2 {
                 font-family: Lighthaus;
-                font-size: 26px;
+                font-size: 35px;
                 text-align: center;
                 color: #031412;
                 margin: 20px 0 15px 0;
             }
 
             &__input {
-                max-width: 240px;
+                max-width: 300px;
                 width: 100%;
                 margin-bottom: 20px;
-                min-height: 30px;
-                font-family: Mont;
-                font-size: 14px;
+                min-height: 50px;
+                font-size: 16px;
                 padding: 0 0 0 10px;
                 color: #A1A1A1;
                 border: 1px solid #A1A1A1;
@@ -150,11 +146,10 @@
             }
 
             &__input2 {
-                max-width: 240px;
+                max-width: 300px;
                 width: 100%;
-                min-height: 30px;
-                font-family: Mont;
-                font-size: 14px;
+                min-height: 50px;
+                font-size: 16px;
                 padding: 0 0 0 10px;
                 color: #A1A1A1;
                 border: 1px solid #A1A1A1;
@@ -165,12 +160,11 @@
             }
 
             &__input3 {
-                max-width: 240px;
+                max-width: 300px;
                 width: 100%;
                 margin: 20px 0 20px 0;
-                min-height: 30px;
-                font-family: Mont;
-                font-size: 14px;
+                min-height: 50px;
+                font-size: 16px;
                 padding: 0 0 0 10px;
                 color: #A1A1A1;
                 border: 1px solid #A1A1A1;
@@ -180,22 +174,23 @@
                 }
             }
 
-            P {
-                font-family: Mont;
-                font-size: 14px;
+            &__forget {
+                font-size: 18px;
                 text-align: center;
                 text-decoration-line: underline;
-                color: #5E3928;
+                background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
 
             }
 
             &__button {
                 background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
-                max-width: 241px;
+                max-width: 300px;
                 width: 100%;
                 color: #fff;
-                padding: 5px 0 5px 0;
-                font-size: 14px;
+                padding: 10px 0 10px 0;
+                font-size: 16px;
                 border: 0;
 
                 &:hover {
@@ -207,25 +202,19 @@
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                width: 300px;
+                width: 350px;
                 padding: 0;
                 margin: 20px 0 0 0px;
                 background: linear-gradient(285.45deg, #0B3F37 38.27%, #CB8D62 141.81%);
 
                 .text {
-                    font-family: Mont;
-                    font-size: 14px;
+                    font-size: 16px;
                     color: #FFFFFF;
-                    text-decoration: none;
                 }
 
                 .text1 {
-                    font-family: Mont;
-                    font-style: normal;
-                    font-weight: 800;
-                    font-size: 14px;
+                    font-size: 16px;
                     color: #FFFFFF;
-                    text-decoration: none;
                 }
             }
         }
@@ -233,7 +222,7 @@
 
     &-footer {
         background: linear-gradient(285.45deg, #0B3F37 38.27%, #CB8D62 141.81%);
-        padding: 10px;
+        padding: 20px;
         text-align: center;
 
         .logo {
@@ -243,7 +232,7 @@
 
         p {
             margin-bottom: 10px;
-            font-size: 10px;
+            font-size: 12px;
             text-align: center;
             color: #ADADAD;
         }
