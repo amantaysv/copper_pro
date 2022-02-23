@@ -1,165 +1,165 @@
 .header {
-    position: static;
+  position: static;
 }
 
 .cardochki {
-    padding: 30px;
+  padding: 30px;
 
-    &__title {
-        font-family: "Mont";
-        font-weight: 400;
-        font-size: 18px;
-        color: #031412;
+  &__title {
+    font-family: "Mont";
+    font-weight: 400;
+    font-size: 18px;
+    color: #031412;
+    position: relative;
+
+    &::before {
+      content: url('../images/header/shopping-cart.svg');
+      width: 40px;
+      height: 49px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  &__feature {
+    padding: 20px;
+    position: relative;
+
+    .box {
+      position: absolute;
+      right: 0;
+
+      flex-direction: column;
+      width: 450px;
+
+      .description {
         position: relative;
+        padding: 20px;
 
         &::before {
-            content: url('../images/header/shopping-cart.svg');
-            width: 40px;
-            height: 49px;
-            position: absolute;
-            top: 0;
-            left: 0;
+          content: '';
+          left: 0;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 2px;
+          border: 1px solid #E6E8E7;
+
         }
 
-        span {
-            font-weight: 600;
-        }
-    }
+        h2 {
+          font-family: "Mont";
+          font-weight: 800;
+          font-size: 16px;
+          text-transform: uppercase;
+          color: #031412;
+          margin-bottom: 20px;
 
-    &__feature {
-        padding: 20px;
+        }
+
+        p {
+
+
+          font-family: "Mont";
+          font-size: 16px;
+          font-weight: none;
+          color: #031412;
+
+        }
+      }
+
+      :nth-child(1)\  {
+        font-family: " Lighthaus";
+        font-size: 40px;
+        color: #031412;
+      }
+
+      .inventory {
         position: relative;
-
-        .box {
-            position: absolute;
-            right: 0;
-
-            flex-direction: column;
-            width: 450px;
-
-            .description {
-                position: relative;
-                padding: 20px;
-
-                &::before {
-                    content: '';
-                    left: 0;
-                    position: absolute;
-                    bottom: 0;
-                    width: 100%;
-                    height: 2px;
-                    border: 1px solid #E6E8E7;
-
-                }
-
-                h2 {
-                    font-family: "Mont";
-                    font-weight: 800;
-                    font-size: 16px;
-                    text-transform: uppercase;
-                    color: #031412;
-                    margin-bottom: 20px;
-
-                }
-
-                p {
-
-
-                    font-family: "Mont";
-                    font-size: 16px;
-                    font-weight: none;
-                    color: #031412;
-
-                }
-            }
-
-            :nth-child(1)\  {
-                font-family: " Lighthaus";
-                font-size: 40px;
-                color: #031412;
-            }
-
-            .inventory {
-                position: relative;
-                margin-top: 20px;
-                display: flex;
-                column-gap: 200px;
-                margin-bottom: 60px;
-
-                &::before {
-                    content: '';
-                    top: 50px;
-                    position: absolute;
-                    bottom: 0;
-                    width: 100%;
-                    height: 2px;
-                    border: 1px solid #E6E8E7;
-
-                }
-
-                :nth-child(1) {
-                    font-family: " Mont";
-                    font-weight: 800;
-                    font-size: 16px;
-                    color: #4B7159;
-                }
-
-                :nth-child(2) {
-                    font-family: "Mont";
-                    font-size: 16px;
-                    color: #031412;
-
-                    span {
-                        color: black;
-                        font-size: 16px;
-                        font-weight: 600;
-                    }
-                }
-
-            }
-
-
-        }
-
-
-
-
-
-
-
-    }
-
-    &__price {
+        margin-top: 20px;
         display: flex;
-        justify-content: center;
-        width: 600px;
-        position: absolute;
-        right: 0;
+        column-gap: 200px;
+        margin-bottom: 60px;
 
-        &:nth-child(1) {
-            font-family: "Mont";
-            font-weight: 800;
-            font-size: 45px;
-            color: #9B0000;
+        &::before {
+          content: '';
+          top: 50px;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 2px;
+          border: 1px solid #E6E8E7;
+
         }
 
-        .btnka {
-            margin-top: 90px;
-
-            .btn {
-                color: #fff;
-                width: 400px;
-                height: 47px;
-                background: $gold;
-                font-family: "Mont";
-                font-weight: 800;
-                font-size: 18px;
-                line-height: 96.4%;
-                // text-align: center;
-
-            }
+        :nth-child(1) {
+          font-family: " Mont";
+          font-weight: 800;
+          font-size: 16px;
+          color: #4B7159;
         }
+
+        :nth-child(2) {
+          font-family: "Mont";
+          font-size: 16px;
+          color: #031412;
+
+          span {
+            color: black;
+            font-size: 16px;
+            font-weight: 600;
+          }
+        }
+
+      }
 
 
     }
+
+
+
+
+
+
+
+  }
+
+  &__price {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    position: absolute;
+    right: 0;
+
+    &:nth-child(1) {
+      font-family: "Mont";
+      font-weight: 800;
+      font-size: 45px;
+      color: #9B0000;
+    }
+
+    .btnka {
+      margin-top: 90px;
+
+      .btn {
+        color: #fff;
+        width: 400px;
+        height: 47px;
+        background: $gold;
+        font-family: "Mont";
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 96.4%;
+        // text-align: center;
+
+      }
+    }
+
+
+  }
 }
