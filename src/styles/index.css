@@ -144,13 +144,13 @@ button {
   background: linear-gradient(285.45deg, #0B3F37 38.27%, #CB8D62 141.81%);
   color: #fff;
   width: 100%;
-}
-
-.header.transparent {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
+}
+
+.header.transparent {
   background: none;
 }
 
@@ -732,16 +732,6 @@ button {
   }
 }
 
-<<<<<<< HEAD
-.header {
-  position: static;
-}
-
-.cardochki {
-  padding: 30px;
-}
-
-=======
 .cardochki {
   width: 100%;
   height: 100%;
@@ -762,16 +752,12 @@ button {
   width: 100%;
 }
 
->>>>>>> origin/master
 .cardochki__title {
   font-family: "Mont";
   font-weight: 400;
   font-size: 18px;
   color: #031412;
-<<<<<<< HEAD
-=======
   position: relative;
->>>>>>> origin/master
 }
 
 .cardochki__title span {
@@ -780,27 +766,14 @@ button {
 
 .cardochki__feature {
   padding: 20px;
-<<<<<<< HEAD
-  position: relative;
-}
-
-.cardochki__feature .box {
-  position: absolute;
-  right: 0;
-=======
   width: 50%;
 }
 
 .cardochki__feature .box {
->>>>>>> origin/master
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-<<<<<<< HEAD
-  width: 450px;
-=======
->>>>>>> origin/master
 }
 
 .cardochki__feature .box .description {
@@ -834,11 +807,7 @@ button {
   color: #031412;
 }
 
-<<<<<<< HEAD
-.cardochki__feature .box :nth-child(1) {
-=======
 .cardochki__feature .box :nth-child(1)\ {
->>>>>>> origin/master
   font-family: " Lighthaus";
   font-size: 40px;
   color: #031412;
@@ -884,111 +853,6 @@ button {
   font-weight: 600;
 }
 
-<<<<<<< HEAD
-.container {
-  position: relative;
-  z-index: 1;
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1400px;
-  }
-}
-
-.ellipses {
-  position: absolute;
-  height: 100%;
-  width: 100vw;
-}
-
-.ellipses span {
-  position: absolute;
-  width: calc(50% + 200px);
-  padding-bottom: calc(50% + 200px);
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.ellipses span:nth-child(1) {
-  top: 50%;
-  left: 0;
-  -webkit-transform: translate(-150px, -50%);
-          transform: translate(-150px, -50%);
-}
-
-.ellipses span:nth-child(2) {
-  top: 50%;
-  right: 0;
-  -webkit-transform: translate(150px, -50%);
-          transform: translate(150px, -50%);
-}
-
-.ellipses span:nth-child(3) {
-  top: 0;
-  left: 0;
-  -webkit-transform: translate(-40%, -40%);
-          transform: translate(-40%, -40%);
-}
-
-.ellipses span:nth-child(4) {
-  top: 0;
-  right: 0;
-  -webkit-transform: translate(40%, -40%);
-          transform: translate(40%, -40%);
-}
-
-.ellipses span:nth-child(5) {
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, 60%);
-          transform: translate(-50%, 60%);
-}
-
-.btn-gold {
-  background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
-  color: #fff;
-  border: none;
-}
-
-.btn-large {
-  max-width: 327px;
-  width: 100%;
-  height: 50px;
-}
-
-.basket {
-  position: relative;
-  min-height: 100vh;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
-}
-
-.basket__container {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-=======
 .cardochki__price {
   -webkit-column-gap: 20px;
           column-gap: 20px;
@@ -1084,6 +948,152 @@ button {
   width: 100%;
   height: 2px;
   border: 1px solid #E6E8E7;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+.ellipses {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+}
+
+.ellipses span {
+  position: absolute;
+  width: calc(50% + 200px);
+  padding-bottom: calc(50% + 200px);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.ellipses span:nth-child(1) {
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(-150px, -50%);
+          transform: translate(-150px, -50%);
+}
+
+.ellipses span:nth-child(2) {
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(150px, -50%);
+          transform: translate(150px, -50%);
+}
+
+.ellipses span:nth-child(3) {
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-40%, -40%);
+          transform: translate(-40%, -40%);
+}
+
+.ellipses span:nth-child(4) {
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(40%, -40%);
+          transform: translate(40%, -40%);
+}
+
+.ellipses span:nth-child(5) {
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 60%);
+          transform: translate(-50%, 60%);
+}
+
+.btn-gold {
+  background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+  color: #fff;
+  border: none;
+}
+
+.btn-large {
+  max-width: 327px;
+  width: 100%;
+  height: 50px;
+}
+
+.basket {
+  padding-top: 165px;
+}
+
+.basket__table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.basket__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.basket__head div:nth-child(1) {
+  max-width: 533px;
+  width: 100%;
+}
+
+.basket__head div:nth-child(2) {
+  max-width: 190px;
+  width: 100%;
+}
+
+.basket__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 33px;
+          column-gap: 33px;
+}
+
+.basket__item div:nth-child(1) {
+  max-width: 90px;
+  width: 100%;
+}
+
+.basket__item div:nth-child(2) {
+  max-width: 378px;
+  width: 100%;
+}
+
+.basket__item div:nth-child(3) {
+  max-width: 158px;
+  width: 100%;
+}
+
+.basket__item div:nth-child(4) {
+  max-width: 138px;
+  width: 100%;
+}
+
+.basket__item h3 {
+  font-size: 18px;
 }
 
 .catalog {
@@ -1295,6 +1305,4 @@ button {
   line-height: 96.4%;
   /* identical to box height, or 29px */
   color: #031412;
->>>>>>> origin/master
 }
-/*# sourceMappingURL=index.css.map */

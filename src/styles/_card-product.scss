@@ -1,14 +1,58 @@
 @import './variables';
 
 .basket {
-    position: relative;
-    min-height: 100vh;
-    height: 100%;
-    display: flex;
-    overflow: hidden;
-    &__container {
-       justify-content: center;
-       align-items: flex-start;
-       display: flex;
+    padding-top: 165px;
+
+    &__table {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    &__head {
+        display: flex;
+
+        div {
+            &:nth-child(1) {
+                max-width: 533px;
+                width: 100%;
+            }
+
+            &:nth-child(2) {
+                max-width: 190px;
+                width: 100%;
+            }
+        }
+    }
+
+    &__item {
+        display: flex;
+        column-gap: 33px;
+
+        div {
+            &:nth-child(1) {
+                max-width: 90px;
+                width: 100%;
+            }
+
+            &:nth-child(2) {
+                max-width: 378px;
+                width: 100%;
+            }
+
+            &:nth-child(3) {
+                max-width: 158px;
+                width: 100%;
+            }
+
+            &:nth-child(4) {
+                max-width: 138px;
+                width: 100%;
+            }
+        }
+
+        h3 {
+            font-size: 18px;
+        }
     }
 }

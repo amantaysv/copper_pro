@@ -2,12 +2,12 @@
   background: $gold-green;
   color: $secondary;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
 
   &.transparent {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
     background: none;
   }
 
