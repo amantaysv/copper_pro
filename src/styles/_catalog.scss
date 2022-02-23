@@ -4,9 +4,11 @@
   }
 
   margin-top: 160px;
-  .mesto{
+
+  .mesto {
     font-size: 23px;
   }
+
   &__title {
     margin-top: 23px;
     margin-bottom: 31px;
@@ -25,6 +27,7 @@
     column-gap: 30px;
     row-gap: 30px;
   }
+
   &__tab {
     width: calc(25% - 30px);
     position: relative;
@@ -68,7 +71,8 @@
       &:hover {
         background: linear-gradient(180deg, rgba(255, 255, 255, 0), #CB8D62);
       }
-    }}
+    }
+  }
 
   &__search {
     display: flex;
@@ -103,21 +107,23 @@
     border-bottom: 1px black solid;
 
   }
-  
+
 
   .sort {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    .custom-select{
-      select{
-      height: 40px;
-      border: none;
-      font-size: 19px;
-      font-weight: 700;
+
+    .custom-select {
+      select {
+        height: 40px;
+        border: none;
+        font-size: 19px;
+        font-weight: 700;
       }
     }
   }
+
   &__cards {
     display: flex;
     flex-wrap: wrap;
@@ -128,11 +134,13 @@
   }
 
   &__card {
-    max-width: 446px;
+    width: calc(33% - 30px);
     position: relative;
-    img{
+
+    img {
       width: 100%;
     }
+
     .heart {
       position: absolute;
       top: 0;
@@ -145,7 +153,6 @@
         background: url(../images/catalog/backg.png) center/cover no-repeat;
 
       }
-     
     }
 
     &__text {
@@ -179,6 +186,71 @@
     color: #031412;
   }
 }
-@media(max-width: 720px){
+
+@media(max-width: 760px) {
+
+  .catalog {
+    margin-top: 90px;
+
+    &__title {
+      margin-top: 16px;
+      margin-bottom: 23px;
+      font-size: 45px;
+    }
+
+    &__tab {
+      width: calc(50% - 30px);
+
+    }
+
+    &__search {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin: 47px 0 32px;
+    }
+
+    &__card {
+      width: calc(50% - 30px);
+
+    }
+   .price {
+      
+      font-size: 22px;
+      
+  }
+    .mesto {
+      font-size: 18px;
+    }
+  }
+
+}
+
+@media (max-width: 480px) {
+  .catalog {
+    .search__input {
+      height: 40px;
+      width: 100%;
+      border: none;
+      border-bottom: 1px black solid;
+      padding: 0;
+      font-size: 20px;
+      color: #031412;
+    }
+    &__card{
+      width: calc(100% - 30px);
+  
+    }
+    .description{
+      font-size: 15px;
+    }
+    .price{
+      
+    font-size: 24px;
+    }
+  }
 
 }
