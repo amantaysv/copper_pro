@@ -50,6 +50,7 @@ button {
   display: inline-block;
   font-weight: 800;
   font-size: 18px;
+  background-color: transparent;
 }
 
 @import './header';
@@ -57,5 +58,9 @@ button {
 @import './modal';
 @import './news';
 @import './productcard';
+<<<<<<< HEAD
 @import './card-product';
 
+=======
+@import './catalog';
+>>>>>>> origin/master
