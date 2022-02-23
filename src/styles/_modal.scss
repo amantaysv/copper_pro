@@ -1,63 +1,70 @@
-.button{
+.button {
     background: coral;
     padding: 1em 2em;
     color: #fff;
     border: 0;
 
-    &:hover{
+    &:hover {
         background: #333;
     }
 }
 
-.modal{
+.modal {
     position: fixed;
     left: 0;
     top: 0;
-    height: 100vw;
+    height: 100vh;
     width: 100vw;
-    z-index: 1;
+    z-index: 11;
     background-color: rgba(0, 0, 0, 0.5);
     display: none;
+    justify-content: center;
+    align-items: center;
 
-    .modal-content{
+    &.active {
+        display: flex;
+    }
+
+    &-content {
         background: rgba(255, 255, 255, 0.95);
         width: 1200px;
         height: 620px;
         animation-name: modalopen;
         animation-duration: 1s;
     }
-    
-    .modal-header{
+
+    &-header {
+        position: relative;
         background: linear-gradient(285.45deg, #0B3F37 38.27%, #CB8D62 141.81%);
         text-align: center;
         padding: 10px;
-    
-        .logo{
+
+        .logo {
             width: 100px;
             margin: 5px 0 5px 0;
         }
     }
-    
-    .modal-body{
+
+    &-body {
         padding: 20px 20px;
         text-align: center;
         position: relative;
-    
-        &__img1{
+
+        &__img1 {
             width: 150px;
             padding-top: 35px;
             margin-left: 80px;
         }
-    
-        &__img2{
+
+        &__img2 {
             position: absolute;
             width: 150px;
             left: 485px;
             top: 110px;
         }
 
-    
-        h2{
+
+        h2 {
             font-family: Lighthaus;
             font-style: normal;
             font-weight: normal;
@@ -66,8 +73,8 @@
             margin: 0;
             padding: 0;
         }
-    
-        p{
+
+        p {
             font-family: Mont;
             font-style: normal;
             font-size: 18px;
@@ -75,22 +82,22 @@
             margin: 0;
             padding: 20px 0 20px 0;
         }
-    
-        &__button{
+
+        &__button {
             background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
             width: 300px;
             height: 40px;
             padding: 0 2em;
             color: #fff;
             margin-bottom: 60px;
-    
-            &:hover{
+
+            &:hover {
                 background: #333;
             }
-    
+
         }
 
-        .loggin{
+        .loggin {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -98,7 +105,7 @@
             margin: 0;
             height: 450px;
 
-            .main-btn{
+            .main-btn {
                 position: absolute;
                 width: 200px;
                 height: 30px;
@@ -113,12 +120,12 @@
                 color: #A1A1A1;
             }
 
-            div{
+            div {
                 width: 300px;
                 background: #fff;
             }
 
-            h2{
+            h2 {
                 font-family: Lighthaus;
                 font-size: 26px;
                 text-align: center;
@@ -126,7 +133,7 @@
                 margin: 20px 0 15px 0;
             }
 
-            &__input{
+            &__input {
                 max-width: 240px;
                 width: 100%;
                 margin-bottom: 20px;
@@ -141,7 +148,8 @@
                     color: #78808F;
                 }
             }
-            &__input2{
+
+            &__input2 {
                 max-width: 240px;
                 width: 100%;
                 min-height: 30px;
@@ -155,7 +163,8 @@
                     color: #78808F;
                 }
             }
-            &__input3{
+
+            &__input3 {
                 max-width: 240px;
                 width: 100%;
                 margin: 20px 0 20px 0;
@@ -171,16 +180,16 @@
                 }
             }
 
-            P{
+            P {
                 font-family: Mont;
                 font-size: 14px;
                 text-align: center;
                 text-decoration-line: underline;
                 color: #5E3928;
-                
+
             }
 
-            &__button{
+            &__button {
                 background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
                 max-width: 241px;
                 width: 100%;
@@ -188,12 +197,13 @@
                 padding: 5px 0 5px 0;
                 font-size: 14px;
                 border: 0;
-        
-                &:hover{
+
+                &:hover {
                     background: #333;
                 }
             }
-            .question{
+
+            .question {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
@@ -202,13 +212,14 @@
                 margin: 20px 0 0 0px;
                 background: linear-gradient(285.45deg, #0B3F37 38.27%, #CB8D62 141.81%);
 
-                .text{
+                .text {
                     font-family: Mont;
                     font-size: 14px;
                     color: #FFFFFF;
                     text-decoration: none;
                 }
-                .text1{
+
+                .text1 {
                     font-family: Mont;
                     font-style: normal;
                     font-weight: 800;
@@ -219,41 +230,47 @@
             }
         }
     }
-    
-    .modal-footer{
+
+    &-footer {
         background: linear-gradient(285.45deg, #0B3F37 38.27%, #CB8D62 141.81%);
         padding: 10px;
         text-align: center;
-    
-        .logo{
+
+        .logo {
             width: 100px;
             margin: 10px 0 5px 0;
         }
-    
-        p{
+
+        p {
             margin-bottom: 10px;
             font-size: 10px;
             text-align: center;
             color: #ADADAD;
         }
     }
-    
-    .closeBtn{
+
+    &-close-btn {
         color: #fff;
-        float: right;
         font-size: 30px;
-    
-        &:hover, &:focus{
-            color: #000;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        &:hover,
+        &:focus {
             text-decoration: none;
             cursor: pointer;
         }
     }
-    
-    @keyframes modalopen{
-        from{opacity: 0}
-        to {opacity: 1}
+
+    @keyframes modalopen {
+        from {
+            opacity: 0
+        }
+
+        to {
+            opacity: 1
+        }
     }
-    
+
 }
-    
