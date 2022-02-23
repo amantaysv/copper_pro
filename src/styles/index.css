@@ -819,12 +819,28 @@ button {
   width: 100%;
   height: 100%;
   padding: 30px;
+  padding-top: 165px;
 }
 
-.cardochki__row {
+.cardochki__breadcrumps {
+  font-size: 18px;
+  position: relative;
+  margin-bottom: 27px;
+}
+
+.cardochki__breadcrumps span {
+  font-weight: 600;
+}
+
+.cardochki .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 30px;
+}
+
+.cardochki .col-6 {
+  width: calc(50% - 15px);
 }
 
 .cardochki__carousel {
@@ -835,68 +851,18 @@ button {
   width: 100%;
 }
 
-.cardochki__title {
-  font-family: "Mont";
+.cardochki-feature {
+  position: relative;
+  padding: 20px;
+}
+
+.cardochki-feature__title {
+  font-family: "Lighthaus";
   font-weight: 400;
-  font-size: 18px;
-  color: #031412;
-  position: relative;
-}
-
-.cardochki__title span {
-  font-weight: 600;
-}
-
-.cardochki__feature {
-  padding: 20px;
-  width: 50%;
-}
-
-.cardochki__feature .box {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.cardochki__feature .box .description {
-  position: relative;
-  padding: 20px;
-}
-
-.cardochki__feature .box .description::before {
-  content: '';
-  left: 0;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  border: 1px solid #E6E8E7;
-}
-
-.cardochki__feature .box .description h2 {
-  font-family: "Mont";
-  font-weight: 800;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #031412;
-  margin-bottom: 20px;
-}
-
-.cardochki__feature .box .description p {
-  font-family: "Mont";
-  font-size: 16px;
-  font-weight: none;
-  color: #031412;
-}
-
-.cardochki__feature .box :nth-child(1)\ {
-  font-family: " Lighthaus";
   font-size: 40px;
-  color: #031412;
 }
 
-.cardochki__feature .box .inventory {
+.cardochki-feature__inventory {
   position: relative;
   margin-top: 20px;
   display: -webkit-box;
@@ -907,71 +873,75 @@ button {
   margin-bottom: 60px;
 }
 
-.cardochki__feature .box .inventory::before {
-  content: '';
-  top: 50px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  border: 1px solid #E6E8E7;
-}
-
-.cardochki__feature .box .inventory :nth-child(1) {
-  font-family: " Mont";
+.cardochki-feature__inventory:nth-child(1) {
   font-weight: 800;
-  font-size: 16px;
   color: #4B7159;
 }
 
-.cardochki__feature .box .inventory :nth-child(2) {
-  font-family: "Mont";
-  font-size: 16px;
+.cardochki-feature__inventory:nth-child(2) {
   color: #031412;
 }
 
-.cardochki__feature .box .inventory :nth-child(2) span {
+.cardochki-feature__inventory:nth-child(2) span {
   color: black;
-  font-size: 16px;
   font-weight: 600;
 }
 
-.cardochki__price {
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
-  padding: 20px 10px;
+.cardochki-feature__divide-line {
+  width: 100%;
+  height: 1px;
+  background-color: #E6E8E7;
+  margin: 37px 0;
+}
+
+.cardochki-feature__description h2 {
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.cardochki-feature__price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 32px;
 }
 
-.cardochki__price .cost {
-  font-family: Mont;
+.cardochki-feature__price .cost {
   font-weight: 600;
   font-size: 33px;
-  color: #031412;
 }
 
-.cardochki__price h3 {
-  font-family: "Mont";
-  font-weight: 800;
+.cardochki-feature__price-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 32px;
+          column-gap: 32px;
+}
+
+.cardochki-feature__price-price .new-price {
   font-size: 45px;
   color: #9B0000;
 }
 
-.cardochki__price :nth-child(3) {
+.cardochki-feature__price-price .old-price {
   position: relative;
   color: #031412;
   opacity: 0.3;
 }
 
-.cardochki__price :nth-child(3)::before {
+.cardochki-feature__price-price .old-price::before {
   content: '';
   position: absolute;
   top: 10px;
@@ -983,7 +953,8 @@ button {
           transform: rotate(20deg);
 }
 
-.cardochki .btnka {
+.cardochki-feature__buy-btn {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -993,44 +964,28 @@ button {
   margin-bottom: 20px;
 }
 
-.cardochki .btnka .btn {
-  color: #fff;
-  width: 300px;
-  height: 47px;
-  background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
-  font-family: "Mont";
-  font-weight: 800;
-  font-size: 18px;
+.cardochki-feature__share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 52px;
+          column-gap: 52px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.cardochki__icons {
-  padding: 20px;
-  position: relative;
+.cardochki-feature__share p {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.cardochki-feature__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 20px;
           column-gap: 20px;
-}
-
-.cardochki__icons :nth-child(1) {
-  font-family: Mont;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #031412;
-  margin-right: 80px;
-}
-
-.cardochki__icons :nth-child(1)::before {
-  content: '';
-  top: 50px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  border: 1px solid #E6E8E7;
 }
 
 .catalog {
@@ -1243,4 +1198,3 @@ button {
   /* identical to box height, or 29px */
   color: #031412;
 }
-/*# sourceMappingURL=index.css.map */

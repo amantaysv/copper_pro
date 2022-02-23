@@ -2,229 +2,147 @@
 @import url(../libs/slick/slick-theme.css);
 
 .cardochki {
-    width: 100%;
-    height: 100%;
-    padding: 30px;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  padding-top: 165px;
 
-    &__row {
-        display: flex;
+  &__breadcrumps {
+    font-size: 18px;
+    position: relative;
+    margin-bottom: 27px;
+
+    span {
+      font-weight: 600;
     }
-    &__carousel {
-        width: 50%;
-        img {
-            width: 100%;
-        }
+  }
+
+  .row {
+    display: flex;
+    gap: 30px;
+  }
+
+  .col-6 {
+    width: calc(50% - 15px);
+  }
+
+  &__carousel {
+    width: 50%;
+
+    img {
+      width: 100%;
     }
+  }
 
-
-
-
-
-
-
-
+  &-feature {
+    position: relative;
+    padding: 20px;
 
     &__title {
-        font-family: "Mont";
-        font-weight: 400;
-        font-size: 18px;
-        color: #031412;
-        position: relative;
-
-
-
-        span {
-            font-weight: 600;
-        }
+      font-family: "Lighthaus";
+      font-weight: 400;
+      font-size: 40px;
     }
 
-    &__feature {
-        padding: 20px;
-        width: 50%;
+    &__inventory {
+      position: relative;
+      margin-top: 20px;
+      display: flex;
+      column-gap: 200px;
+      margin-bottom: 60px;
 
-        .box {
+      &:nth-child(1) {
+        font-weight: 800;
+        color: #4B7159;
+      }
 
-            flex-direction: column;
+      &:nth-child(2) {
+        color: #031412;
 
-            .description {
-                position: relative;
-                padding: 20px;
-
-                &::before {
-                    content: '';
-                    left: 0;
-                    position: absolute;
-                    bottom: 0;
-                    width: 100%;
-                    height: 2px;
-                    border: 1px solid #E6E8E7;
-
-                }
-
-                h2 {
-                    font-family: "Mont";
-                    font-weight: 800;
-                    font-size: 16px;
-                    text-transform: uppercase;
-                    color: #031412;
-                    margin-bottom: 20px;
-
-                }
-
-                p {
-
-
-                    font-family: "Mont";
-                    font-size: 16px;
-                    font-weight: none;
-                    color: #031412;
-
-                }
-            }
-
-            :nth-child(1)\  {
-                font-family: " Lighthaus";
-                font-size: 40px;
-                color: #031412;
-            }
-
-            .inventory {
-                position: relative;
-                margin-top: 20px;
-                display: flex;
-                column-gap: 200px;
-                margin-bottom: 60px;
-
-                &::before {
-                    content: '';
-                    top: 50px;
-                    position: absolute;
-                    bottom: 0;
-                    width: 100%;
-                    height: 2px;
-                    border: 1px solid #E6E8E7;
-
-                }
-
-                :nth-child(1) {
-                    font-family: " Mont";
-                    font-weight: 800;
-                    font-size: 16px;
-                    color: #4B7159;
-                }
-
-                :nth-child(2) {
-                    font-family: "Mont";
-                    font-size: 16px;
-                    color: #031412;
-
-                    span {
-                        color: black;
-                        font-size: 16px;
-                        font-weight: 600;
-                    }
-                }
-
-            }
-
-
+        span {
+          color: black;
+          font-weight: 600;
         }
+      }
+    }
 
+    &__divide-line {
+      width: 100%;
+      height: 1px;
+      background-color: #E6E8E7;
+      margin: 37px 0;
+    }
 
-
-
-
-
-
+    &__description {
+      h2 {
+        font-weight: 800;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
     }
 
     &__price {
-        column-gap: 20px;
-        padding: 20px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 32px;
+
+      .cost {
+        font-weight: 600;
+        font-size: 33px;
+      }
+
+      &-price {
         display: flex;
-        justify-content: center;
         align-items: center;
+        column-gap: 32px;
 
-        // margin-bottom: 20px;
-        .cost {
-            font-family: Mont;
-            font-weight: 600;
-            font-size: 33px;
-            color: #031412;
-
+        .new-price {
+          font-size: 45px;
+          color: #9B0000;
         }
 
-        h3 {
-            font-family: "Mont";
-            font-weight: 800;
-            font-size: 45px;
-            color: #9B0000;
-        }
+        .old-price {
+          position: relative;
+          color: #031412;
+          opacity: 0.3;
 
-        :nth-child(3) {
-            position: relative;
-            color: #031412;
-            opacity: 0.3;
-
-            &::before {
-                content: '';
-                position: absolute;
-                top: 10px;
-                left: -12px;
-                width: 90px;
-                height: 1px;
-                background: gray;
-                transform: rotate(20deg);
-            }
+          &::before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: -12px;
+            width: 90px;
+            height: 1px;
+            background: gray;
+            transform: rotate(20deg);
+          }
         }
+      }
     }
 
-    .btnka {
-        display: flex;
-        justify-content: flex-end;
-        margin-bottom: 20px;
+    &__buy-btn {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 20px;
+    }
 
-        .btn {
-            color: #fff;
-            width: 300px;
-            height: 47px;
-            background: $gold;
-            font-family: "Mont";
-            font-weight: 800;
-            font-size: 18px;
+    &__share {
+      display: flex;
+      column-gap: 52px;
+      align-items: center;
 
-
-        }
-
-
+      p {
+        font-weight: 800;
+        text-transform: uppercase;
+      }
     }
 
     &__icons {
-        padding: 20px;
-        position: relative;
-        display: flex;
-        column-gap: 20px;
-
-
-        :nth-child(1) {
-            font-family: Mont;
-            font-style: normal;
-            font-weight: 800;
-            font-size: 16px;
-            text-transform: uppercase;
-            color: #031412;
-            margin-right: 80px;
-
-            &::before {
-                content: '';
-                top: 50px;
-                position: absolute;
-                bottom: 0;
-                width: 100%;
-                height: 2px;
-                border: 1px solid #E6E8E7;
-
-            }
-        }
+      display: flex;
+      column-gap: 20px;
     }
+  }
 }
