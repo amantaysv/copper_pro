@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../styles/index.css">
 </head>
 
@@ -25,7 +26,8 @@
                 </ul>
                 <ul class="navbar-icons">
                     <li class="nav-icon"><a href="#"><img src="../images/header/heart.svg" alt="heart icon"></a></li>
-                    <li class="nav-icon"><a href="#"><img src="../images/header/shopping-cart.svg" alt="user icon"></a></li>
+                    <li class="nav-icon"><a href="#"><img src="../images/header/shopping-cart.svg" alt="user icon"></a>
+                    </li>
                     <li class="nav-icon">
                         <span class="nav-icon__count">1</span>
                         <a href="#"><img src="../images/header/user.svg" alt="shopping cart icon"></a>
@@ -37,39 +39,83 @@
 
     <section class="cardochki">
         <div class="container">
-
             <div class="name">
                 <p class="cardochki__title">Главная / Каталог / <span>Дистиллятор для получения гидролата 8л</span> </p>
 
             </div>
-            <div class="cardochki__feature">
-                <div class="box">
-                     <p c> Дистиллятор для получения гидролата 8л</p>
-                     <div class="inventory">
-                           <p><img src="../images/producrcard/tick.svg" alt=""> В наличии</p>
-                <p>Артикул: <span>CP-0803</span> </p>
-                     </div>
-              <div class="description">
-                  <h2>Описание</h2>
-                  <p>Медный дистиллятор «Феникс» станет Вашим надёжным помощником и проводником в мир дистилляции и красоты, с которым Вы легко сможете получать свои любимые гидролаты или алкогольные напитки.</p>
-              </div>
-              <div class="price">
-                <div class="stepper stepper--style-1 js-spinner">
-                    <input autofocus type="number" min="0" max="100" step="1" value="0" class="stepper__input">
-                    <div class="stepper__controls">
-                        <button type="button" spinner-button="up">+</button>
-                        <button type="button" spinner-button="down">−</button>
+            <div class="cardochki__row">
+                <div class="cardochki__carousel">
+                    <img src="../images/postcard/brass.png" alt="">
+                </div>
+                <div class="cardochki__feature">
+                    <div class="box">
+                        <p c> Дистиллятор для получения гидролата 8л</p>
+                        <div class="inventory">
+                            <p><img src="../images/postcard/tick.svg" alt=""> В наличии</p>
+                            <p>Артикул: <span>CP-0803</span> </p>
+                        </div>
+                        <div class="description">
+                            <h2>Описание</h2>
+                            <p>Медный дистиллятор «Феникс» станет Вашим надёжным помощником и проводником в мир
+                                дистилляции
+                                и красоты, с которым Вы легко сможете получать свои любимые гидролаты или алкогольные
+                                напитки.</p>
+                        </div>
+                        <div class="cardochki__price">
+                            <p class="cost">Цена</p>
+                            <h3>10 953 грн </h3>
+                            <p>1 953 грн</p>
+
+
+                        </div>
+                        <div class="btnka">
+                            <button class="btn-large btn">Купить</button>
+
+                        </div>
+                        <div class="cardochki__icons">
+                            <p>Поделиться</p>
+                            <img src="../images/postcard/twitter.svg" alt="">
+                            <img src="../images/postcard/facebook.svg" alt="">
+                            <img src="../images/postcard/insta.svg" alt="">
+
+                        </div>
                     </div>
+
                 </div>
-                
-              </div>
-                </div>
-               
             </div>
         </div>
 
+
+
     </section>
-<script src="../js/stepper.js"></script>
+    <section class="narrative">
+        <div class="container">
+            <h3>Описание</h3>
+            <p>Для всех, кто хочет самостоятельно получать гидролат или дистиллят, и быть уверенным в его качестве – у
+                нас есть готовое и удобное решение. Современный дистиллятор «Феникс» станет для Вас отличным помощником.
+                Полностью медный аппарат изготовлен на собственном производстве, на основании многолетнего опыта работы
+                с медными дистилляторами. <br><br>
+
+                Гораздо практичней, чем алькитара, и ни в чём ей не уступающий. Даже наоборот, имеет ряд преимуществ,
+                таких как толщина металла, надёжные, сварные швы, и деревянные ручки, которые не так нагреваются, как
+                латунные. Соединение ароматизационной колонны с емкостью герметично и долговечно. Радиатор данного
+                аппарата расходует в 3 раза меньше воды для охлаждения, в сравнении с алькитарой такого же объёма.
+                <br><br>
+
+                Замечательный аппарат прослужит для Вас долгие годы и будет радовать своего владельца гидролатом
+                высокого качества. Оцените все преимущества паровой дистилляции и получайте гидролаты, в натуральности
+                которых Вы можете быть уверенны. Аппарат полностью укомплектован и готов к работе. Объём перегонного
+                куба – 8 литров. Объём колонны – 0,8 литра. Аппарат полностью укомплектован и готов к
+                эксплуатации.<br><br>
+            </p>
+
+        </div>
+    </section>
+    <script src="../js/stepper.js"></script>
+    <script src="../js/productcard.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./src/libs/slick/slick.min.js"></script>
+
 </body>
 
 </html>
