@@ -38,6 +38,18 @@
     position: relative;
     padding: 20px;
 
+    &__row {
+      display: flex;
+    }
+
+    &__carousel {
+      width: 50%;
+
+      img {
+        width: 100%;
+      }
+    }
+
     &__title {
       font-family: "Lighthaus";
       font-weight: 400;
@@ -58,6 +70,9 @@
 
       &:nth-child(2) {
         color: #031412;
+        position: relative;
+
+
 
         span {
           color: black;
