@@ -1037,6 +1037,23 @@ button {
   padding-top: 165px;
 }
 
+.basket__breadcrumps {
+  font-family: Mont, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  color: #031412;
+}
+
+.basket__title {
+  font-family: Lighthaus, sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 106%;
+  color: #031412;
+  margin-top: 24px;
+  margin-bottom: 27px;
+}
+
 .basket__table {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1052,6 +1069,11 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: 'Mont';
+  font-size: 16px;
+  line-height: 21px;
+  line-height: 132%;
+  color: #A1A1A1;
 }
 
 .basket__head div:nth-child(1) {
@@ -1306,3 +1328,4 @@ button {
   /* identical to box height, or 29px */
   color: #031412;
 }
+/*# sourceMappingURL=index.css.map */

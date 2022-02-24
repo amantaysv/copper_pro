@@ -1,8 +1,25 @@
+
 @import './variables';
 
 .basket {
     padding-top: 165px;
 
+    &__breadcrumps {
+        font-family: Mont, sans-serif;
+        font-style: normal;
+        font-size: 18px;        
+        color: #031412;
+    }
+
+    &__title {
+        font-family: Lighthaus, sans-serif;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 106%;
+        color: #031412;
+        margin-top: 24px;
+        margin-bottom: 27px;
+    }
     &__table {
         display: flex;
         flex-direction: column;
@@ -11,6 +28,11 @@
 
     &__head {
         display: flex;
+        font-family: 'Mont';
+        font-size: 16px;
+        line-height: 21px;
+        line-height: 132%;
+        color:  #A1A1A1;
 
         div {
             &:nth-child(1) {
