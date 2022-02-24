@@ -5,7 +5,7 @@
     padding-top: 165px;
 
     &__breadcrumps {
-        font-family: Mont, sans-serif;
+        font-weight: 600;
         font-style: normal;
         font-size: 18px;        
         color: #031412;
@@ -26,13 +26,22 @@
         width: 100%;
     }
 
-    &__head {
-        display: flex;
-        font-family: 'Mont';
+    &__head { 
+        display: flex;       
         font-size: 16px;
         line-height: 21px;
         line-height: 132%;
         color:  #A1A1A1;
+        margin-bottom: 32px;
+        position: relative;
+        &::after {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border: 3px solid red;
+            max-width: 922px;
+            width: 100%;
+        }
 
         div {
             &:nth-child(1) {
