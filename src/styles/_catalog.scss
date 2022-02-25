@@ -159,14 +159,12 @@
 
   }
 
-  &__card {
+  &-card {
     width: calc(33% - 30px);
     position: relative;
     &.sale {
       position: relative;
 
-
-      
       &::before {
         content: 'sale';
         position: absolute;
@@ -259,7 +257,7 @@
       margin: 47px 0 32px;
     }
 
-    &__card {
+    &-card {
       width: calc(50% - 30px);
 
       
@@ -289,7 +287,7 @@
       color: #031412;
     }
 
-    &__card {
+    &-card {
       width: calc(100% - 30px);
 
     }
