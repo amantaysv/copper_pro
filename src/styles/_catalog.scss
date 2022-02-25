@@ -165,6 +165,8 @@
     &.sale {
       position: relative;
 
+
+      
       &::before {
         content: 'sale';
         position: absolute;
