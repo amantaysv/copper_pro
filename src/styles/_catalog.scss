@@ -157,10 +157,27 @@
 
   }
 
-  &__card {
+  &-card {
     width: calc(33% - 30px);
     position: relative;
+    &.sale {
+      position: relative;
 
+      &::before {
+        content: 'sale';
+        position: absolute;
+        left: 0;
+        top: 27px;
+        z-index: 8;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 96.4%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background-color: #9B0000;
+        padding: 9px 18px;
+      }
+    }
     img {
       width: 100%;
     }
@@ -182,6 +199,7 @@
     &__text {
       display: flex;
       justify-content: space-between;
+      align-items: flex-end;
       margin: 36px 0;
     }
   }
@@ -199,7 +217,7 @@
   }
 
   .price {
-    font-family: Mont;
+    font-family: "Mont";
     font-style: normal;
     font-weight: 800;
     font-size: 30px;
@@ -237,13 +255,13 @@
       margin: 47px 0 32px;
     }
 
-    &__card {
+    &-card {
       width: calc(50% - 30px);
 
+      
     }
 
     .price {
-
       font-size: 22px;
 
     }
@@ -267,7 +285,7 @@
       color: #031412;
     }
 
-    &__card {
+    &-card {
       width: calc(100% - 30px);
 
     }

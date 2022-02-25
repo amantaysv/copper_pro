@@ -1353,16 +1353,35 @@ button {
           justify-content: center;
 }
 
-.catalog__card {
+.catalog-card {
   width: calc(33% - 30px);
   position: relative;
 }
 
-.catalog__card img {
+.catalog-card.sale {
+  position: relative;
+}
+
+.catalog-card.sale::before {
+  content: 'sale';
+  position: absolute;
+  left: 0;
+  top: 27px;
+  z-index: 8;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 96.4%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #9B0000;
+  padding: 9px 18px;
+}
+
+.catalog-card img {
   width: 100%;
 }
 
-.catalog__card .heart {
+.catalog-card .heart {
   position: absolute;
   top: 0;
   right: 0;
@@ -1371,17 +1390,20 @@ button {
   background: url(../images/catalog/no-backg.png) center/cover no-repeat;
 }
 
-.catalog__card .heart:hover {
+.catalog-card .heart:hover {
   background: url(../images/catalog/backg.png) center/cover no-repeat;
 }
 
-.catalog__card__text {
+.catalog-card__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin: 36px 0;
 }
 
@@ -1396,7 +1418,7 @@ button {
 }
 
 .catalog .price {
-  font-family: Mont;
+  font-family: "Mont";
   font-style: normal;
   font-weight: 800;
   font-size: 30px;
@@ -1426,7 +1448,7 @@ button {
     justify-content: space-between;
     margin: 47px 0 32px;
   }
-  .catalog__card {
+  .catalog-card {
     width: calc(50% - 30px);
   }
   .catalog .price {
@@ -1447,7 +1469,7 @@ button {
     font-size: 20px;
     color: #031412;
   }
-  .catalog__card {
+  .catalog-card {
     width: calc(100% - 30px);
   }
   .catalog .description {
@@ -1457,3 +1479,7 @@ button {
     font-size: 24px;
   }
 }
+<<<<<<< HEAD
+=======
+/*# sourceMappingURL=index.css.map */
+>>>>>>> origin/catalog2
