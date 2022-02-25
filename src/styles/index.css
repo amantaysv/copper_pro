@@ -1339,7 +1339,7 @@ button {
   border-bottom: 1px black solid;
 }
 
-.catalog__cards {
+.catalog-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1479,7 +1479,4 @@ button {
     font-size: 24px;
   }
 }
-<<<<<<< HEAD
-=======
 /*# sourceMappingURL=index.css.map */
->>>>>>> origin/catalog2
