@@ -1046,6 +1046,25 @@ button {
   position: relative;
 }
 
+.catalog__card.sale {
+  position: relative;
+}
+
+.catalog__card.sale::before {
+  content: 'sale';
+  position: absolute;
+  left: 0;
+  top: 27px;
+  z-index: 8;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 96.4%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #9B0000;
+  padding: 9px 18px;
+}
+
 .catalog__card img {
   width: 100%;
 }
@@ -1070,6 +1089,9 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin: 36px 0;
 }
 
@@ -1084,7 +1106,7 @@ button {
 }
 
 .catalog .price {
-  font-family: Mont;
+  font-family: "Mont";
   font-style: normal;
   font-weight: 800;
   font-size: 30px;
@@ -1145,3 +1167,4 @@ button {
     font-size: 24px;
   }
 }
+/*# sourceMappingURL=index.css.map */
