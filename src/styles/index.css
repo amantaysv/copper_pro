@@ -1073,9 +1073,8 @@ button {
   line-height: 21px;
   line-height: 132%;
   color: #A1A1A1;
-  margin-bottom: 32px;
+  padding-bottom: 14px;
   position: relative;
-  border-bottom: 1px solid #A1A1A1;
 }
 
 .basket__head div:nth-child(1) {
@@ -1094,6 +1093,8 @@ button {
   display: flex;
   -webkit-column-gap: 33px;
           column-gap: 33px;
+  padding: 18px 0 18px 0;
+  border-top: 1px solid #e6e8e7;
 }
 
 .basket__item div:nth-child(1) {
@@ -1118,6 +1119,49 @@ button {
 
 .basket__item h3 {
   font-size: 18px;
+  font-style: 'Bold';
+  line-height: 132%;
+  padding-top: 7%;
+  font-weight: 800;
+  color: #031412;
+}
+
+.basket__item button {
+  background: url(../images/basket/Layer.svg);
+  width: 15px;
+  height: 18px;
+  border: none;
+}
+
+.basket__count {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 132%;
+  padding-top: 25%;
+  color: #031412;
+}
+
+.basket .price__skide {
+  padding-top: 20%;
+  line-height: 96%;
+  font-size: 14px;
+  font-weight: 600;
+  color: #031412;
+}
+
+.basket .price__pr {
+  font-size: 20px;
+  line-height: 132%;
+  font-weight: 800;
+  color: #9B0000;
+}
+
+.basket .price__p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #031412;
+  line-height: 132%;
+  padding-top: 40px;
 }
 
 .catalog {

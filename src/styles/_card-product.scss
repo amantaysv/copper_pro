@@ -32,9 +32,8 @@
         line-height: 21px;
         line-height: 132%;
         color:  #A1A1A1;
-        margin-bottom: 32px;
-        position: relative;
-        border-bottom: 1px solid #A1A1A1;       
+        padding-bottom: 14px;
+        position: relative;   
 
         div {
             &:nth-child(1) {
@@ -52,6 +51,8 @@
     &__item {
         display: flex;
         column-gap: 33px;
+        padding: 18px 0 18px 0;
+        border-top: 1px solid rgba(230, 232, 231, 1);
 
         div {
             &:nth-child(1) {
@@ -77,6 +78,47 @@
 
         h3 {
             font-size: 18px;
+            font-style: 'Bold';
+            line-height: 132%;
+            padding-top: 7%;
+            font-weight: 800;
+            color: #031412;
+        }
+        button {
+            background: url(../images/basket/Layer.svg);
+            width: 15px;
+            height: 18px;
+            border: none;
+        }
+    }
+    &__count {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 132%;
+        padding-top: 25%;
+        color: #031412;
+    }
+    .price {
+        &__skide {
+            padding-top: 20%;
+            line-height: 96%;
+            font-size: 14px;
+            font-weight: 600;
+            color: #031412;
+        }
+        &__pr {
+            font-size: 20px;
+            line-height: 132%;
+            font-weight: 800;
+            color: #9B0000;
+
+        }
+        &__p {
+            font-size: 20px;
+            font-weight: 600;
+            color: #031412;
+            line-height: 132%;
+            padding-top: 40px;
         }
     }
 }
