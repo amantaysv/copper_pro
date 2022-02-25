@@ -5,7 +5,7 @@
     padding-top: 165px;
 
     &__breadcrumps {
-        font-weight: 600;
+        font-weight: 800;
         font-style: normal;
         font-size: 18px;        
         color: #031412;
@@ -34,14 +34,7 @@
         color:  #A1A1A1;
         margin-bottom: 32px;
         position: relative;
-        &::after {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            border: 3px solid red;
-            max-width: 922px;
-            width: 100%;
-        }
+        border-bottom: 1px solid #A1A1A1;       
 
         div {
             &:nth-child(1) {
