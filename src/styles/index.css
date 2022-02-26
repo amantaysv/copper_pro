@@ -392,17 +392,6 @@ button {
   text-align: right;
 }
 
-.button {
-  background: coral;
-  padding: 1em 2em;
-  color: #fff;
-  border: 0;
-}
-
-.button:hover {
-  background: #333;
-}
-
 .modal {
   position: fixed;
   left: 0;
@@ -427,9 +416,20 @@ button {
 }
 
 .modal-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
   background: rgba(255, 255, 255, 0.95);
-  width: 1200px;
-  height: 620px;
+  width: 100vw;
+  height: 100vh;
   -webkit-animation-name: modalopen;
           animation-name: modalopen;
   -webkit-animation-duration: 1s;
@@ -440,18 +440,32 @@ button {
   position: relative;
   background: linear-gradient(285.45deg, #0B3F37 38.27%, #CB8D62 141.81%);
   text-align: center;
-  padding: 10px;
+  padding: 20px;
 }
 
-.modal-header .logo {
+.modal-header-close-btn {
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.modal-header-close-btn:hover, .modal-header-close-btn:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header-logo {
   width: 100px;
   margin: 5px 0 5px 0;
 }
 
 .modal-body {
-  padding: 20px 20px;
+  padding: 10px 10px;
   text-align: center;
-  position: relative;
 }
 
 .modal-body__img1 {
@@ -467,12 +481,12 @@ button {
   top: 110px;
 }
 
-.modal-body h2 {
+.modal-body-title {
   font-family: Lighthaus;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 28px;
   color: #031412;
-  margin: 0;
+  margin: 15px 0 15px 0;
   padding: 0;
 }
 
@@ -508,20 +522,17 @@ button {
           align-items: center;
   padding: 0;
   margin: 0;
-  height: 450px;
 }
 
 .modal-body .loggin .backToMain {
   position: absolute;
-  width: 250px;
-  height: 50px;
+  width: 300px;
   left: 100px;
-  top: 30px;
+  top: 140px;
   background: #FFFFFF;
   border: 1px solid #A1A1A1;
   font-weight: 600;
   font-size: 16px;
-  text-align: center;
   color: #A1A1A1;
   padding: 15px 0 15px 0;
 }
@@ -531,12 +542,12 @@ button {
   background: #fff;
 }
 
-.modal-body .loggin h2 {
+.modal-body .loggin h3 {
   font-family: Lighthaus;
-  font-size: 35px;
+  font-size: 42px;
   text-align: center;
   color: #031412;
-  margin: 20px 0 15px 0;
+  margin: 15px 0 15px 0;
 }
 
 .modal-body .loggin__input {
@@ -686,21 +697,6 @@ button {
   color: #ADADAD;
 }
 
-.modal-close-btn {
-  color: #fff;
-  font-size: 30px;
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.modal-close-btn:hover, .modal-close-btn:focus {
-  text-decoration: none;
-  cursor: pointer;
-}
-
 @-webkit-keyframes modalopen {
   from {
     opacity: 0;
@@ -716,6 +712,56 @@ button {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 996px;
+  }
+  .modal-body .loggin .backToMain {
+    left: 4%;
+    border: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    display: none;
+  }
+  .modal-body {
+    padding: 0 15px;
+  }
+  .modal-body .loggin div {
+    width: 290px;
+  }
+  .modal-body .loggin .backToMain {
+    left: 4%;
+    width: 290px;
+    border: none;
+    top: 110px;
+  }
+  .modal-body .loggin__input {
+    width: 250px;
+    margin: 30px 0 20px 0;
+  }
+  .modal-body .loggin__input2 {
+    width: 250px;
+    margin-bottom: 20px;
+  }
+  .modal-body .loggin__input3 {
+    width: 250px;
+    margin-bottom: 20px;
+  }
+  .modal-body .loggin .question {
+    width: 290px;
+  }
+  .modal-body-title {
+    margin: 30px 0 0 0;
+  }
+  .modal-body .loggin__button {
+    max-width: 250px;
+    padding: 0 0 10px 0;
   }
 }
 

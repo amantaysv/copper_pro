@@ -7,7 +7,7 @@ const modalGoToLoginBtn = document.getElementById('modal-goToLoginBtn')
 const modalGoToRegistrationBtn = document.getElementById(
   'modal-goToRegistrationBtn'
 )
-const closeBtns = document.getElementsByClassName('modal-close-btn')
+const closeBtns = document.getElementsByClassName('modal-header-close-btn')
 
 modalBtn.addEventListener('click', () => {
   addClass(loginModal)
