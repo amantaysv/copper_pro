@@ -3,6 +3,8 @@
 .basket {
     padding-top: 165px;
     display: flex;
+    background-color:
+    rgba(255, 255, 255, 1);
 
     &__breadcrumps {
         font-weight: 800;
@@ -124,36 +126,79 @@
             font-weight: 600;
             color: #031412;
             line-height: 132%;
-            padding-top: 40px;
+            padding-top: 30%;
         }
     }
 
     &__boxtotal {
-        // max-width: 446px;
-        // width: 100%;
-        // height: 332px;
+        background-color: lightblue;
+        max-width: 446px;
+        width: 100%;
+        height: 332px;
+        box-shadow: 40px, 0, 0, 0, rgba(0, 0, 0, 0.05);
 
-        &__total {
-            display: flex;
+        &_total {
+            position: relative;
             padding: 23px 0 0 30px;
+            padding-bottom: 31px;
+            border-bottom: 1px solid #A1A1A1;
+            
 
             h2 {
+                line-height: 96%;
                 font-weight: 400;
                 font-size: 35px;
                 color: $primary;
+                margin-bottom: 20px;
             }
 
             h4 {
+                line-height: 96%;
                 font-weight: 800;
                 font-size: 40px;
                 color: $primary;
             }
 
-        }
-        &__order {
-            span {
-                background: url(../images/basket/Union.svg);    
+            img {
+                position: absolute;
+                top: -31px;
+                right: 0;
             }
+
+        }
+
+        &_order {
+            margin-top: 10px;
+            padding: 27px 30px;
+            display: flex;
+
+            span {
+                font-family: "Mont",sans-serif;
+                margin-bottom: 29px;
+                font-weight: 600;
+                line-height: 116%;
+                color: #A1A1A1;
+
+            }
+
+            img {
+                margin-right: 19px;
+            }
+        }
+        button {
+            border: none;
+            margin: 0 34px 40px;
+            max-width: 374px;
+            width: 100%;
+            height: 50px;
+            font-family: "Mont", sans-serif;
+            font-weight: 800;
+            display: block;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+            color: $secondary;
+
         }
     }
 }
