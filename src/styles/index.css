@@ -1167,12 +1167,6 @@ button {
   padding-top: 40px;
 }
 
-.basket__boxtotal {
-  max-width: 446px;
-  width: 100%;
-  height: 332px;
-}
-
 .basket__boxtotal__total {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1180,21 +1174,20 @@ button {
   padding: 23px 0 0 30px;
 }
 
-.basket__boxtotal__total div h2 {
-  font-family: "Mont", sans-serif;
-  font-style: 'light';
+.basket__boxtotal__total h2 {
   font-weight: 400;
   font-size: 35px;
-  line-height: 96%;
   color: #031412;
 }
 
-.basket__boxtotal__total div h4 {
-  font-family: "Mont", sans-serif;
+.basket__boxtotal__total h4 {
   font-weight: 800;
   font-size: 40px;
-  line-height: 96%;
   color: #031412;
+}
+
+.basket__boxtotal__order span {
+  background: url(../images/basket/Union.svg);
 }
 
 .catalog {

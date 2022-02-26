@@ -129,33 +129,31 @@
     }
 
     &__boxtotal {
-        max-width: 446px;
-        width: 100%;
-        height: 332px;
+        // max-width: 446px;
+        // width: 100%;
+        // height: 332px;
 
         &__total {
             display: flex;
             padding: 23px 0 0 30px;
 
-            div {
-                h2 {
-                    font-family: "Mont", sans-serif;
-                    font-style: 'light';
-                    font-weight: 400;
-                    font-size: 35px;
-                    line-height: 96%;
-                    color: #031412;
-                }
-
-                h4 {
-                    font-family: "Mont", sans-serif;
-                    font-weight: 800;
-                    font-size: 40px;
-                    line-height: 96%;
-                    color: #031412;
-                }
+            h2 {
+                font-weight: 400;
+                font-size: 35px;
+                color: $primary;
             }
 
+            h4 {
+                font-weight: 800;
+                font-size: 40px;
+                color: $primary;
+            }
+
+        }
+        &__order {
+            span {
+                background: url(../images/basket/Union.svg);    
+            }
         }
     }
 }
