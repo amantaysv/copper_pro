@@ -1170,8 +1170,7 @@ button {
 
 .basket__boxtotal {
   background-color: lightblue;
-  max-width: 446px;
-  width: 100%;
+  width: 446px;
   height: 332px;
   -webkit-box-shadow: 40px, 0, 0, 0, rgba(0, 0, 0, 0.05);
           box-shadow: 40px, 0, 0, 0, rgba(0, 0, 0, 0.05);
@@ -1189,7 +1188,7 @@ button {
   font-weight: 400;
   font-size: 35px;
   color: #031412;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .basket__boxtotal_total h4 {
@@ -1213,21 +1212,28 @@ button {
   display: flex;
 }
 
-.basket__boxtotal_order span {
+.basket__boxtotal_order p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: "Mont",sans-serif;
-  margin-bottom: 29px;
   font-weight: 600;
   line-height: 116%;
   color: #A1A1A1;
 }
 
 .basket__boxtotal_order img {
+  padding-top: 10px;
   margin-right: 19px;
 }
 
 .basket__boxtotal button {
   border: none;
-  margin: 0 34px 40px;
+  margin: 0 34px 41px 34px;
   max-width: 374px;
   width: 100%;
   height: 50px;
