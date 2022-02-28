@@ -110,19 +110,19 @@
             line-height: 96%;
             font-size: 14px;
             font-weight: 600;
-            color: #031412;
+            color: #a1a1a1;
             position: relative;
 
             &::before {
                 content: '';
                 position: absolute;
-                top: 35px;
+                top: 33px;
                 left: 0px;
                 width: 59px;
                 height: 1px;
                 background: gray;
                 transform: rotate(8deg);
-                
+
             }
         }
 
@@ -224,6 +224,7 @@
         margin-top: 20px;
 
         button {
+            // font-style:"Bold";
             font-weight: 800;
             font-size: 18px;
             line-height: 96%;

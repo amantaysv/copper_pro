@@ -1203,14 +1203,14 @@ button {
   line-height: 96%;
   font-size: 14px;
   font-weight: 600;
-  color: #031412;
+  color: #a1a1a1;
   position: relative;
 }
 
 .basket .price__skide::before {
   content: '';
   position: absolute;
-  top: 35px;
+  top: 33px;
   left: 0px;
   width: 59px;
   height: 1px;
