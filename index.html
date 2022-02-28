@@ -70,29 +70,25 @@
     <div class="modal-content">
       <div class="modal-header">
         <img class="logo" src="./src/images/modal/logo.png" alt="logo">
-        <button type="button" class="btn modal-close-btn">&times;</button>
       </div>
-      <div class="modal-body">
-<<<<<<< Updated upstream
-        <div class="loggin">
-          <a href="index.html" class="backToMain">Назад на главную</a>
-=======
-        <a href="index.html" class="main-btn">Назад на главную</a>
-        <div class="modal-form">
->>>>>>> Stashed changes
-          <div>
-            <h2 class="modal-body-title">Регистрация</h2>
-            <input type="text" class="loggin__input" placeholder="E-mail"> <br>
-            <input type="text" class="loggin__input2" placeholder="Пароль"> <br>
-            <input type="text" class="loggin__input3" placeholder="Повторите пароль">
-            <button class="loggin__button btn-gold btn-large">Регистрация</button>
-            <div class="question">
-              <p class="text">Есть аккаунт ?</p>
-              <button id="modal-goToLoginBtn" class="text1">Войти</button>
-            </div>
+
+      <div class="container">
+        <a href="index.html" class="backToMain">Назад на главную</a>
+        <div class="modal-body">
+          <form class="modal-form">
+            <h2 class="modal-form__title">Регистрация</h2>
+            <input type="text" class="modal-form__input" placeholder="E-mail">
+            <input type="text" class="modal-form__input" placeholder="Пароль">
+            <input type="text" class="modal-form__input" placeholder="Повторите пароль">
+            <button class="modal-form__btn btn-gold btn-large">Регистрация</button>
+          </form>
+          <div class="modal-auth">
+            <p>Есть аккаунт ?</p>
+            <button id="modal-goToLoginBtn">Войти</button>
           </div>
         </div>
       </div>
+
       <div class="modal-footer">
         <img class="logo" src="./src/images/modal/logo.png" alt="logo">
         <p>© 2021 “Copper Pro” <br>
@@ -105,22 +101,21 @@
   <div id="modal-login" class="modal">
     <div class="modal-content">
       <div class="modal-header">
-        <img class="modal-header-logo" src="./src/images/modal/logo.png" alt="logo">
-        <button type="button" class="btn modal-header-close-btn">&times;</button>
+        <img class="logo" src="./src/images/modal/logo.png" alt="logo">
       </div>
-      <div class="modal-body">
-        <div class="loggin">
-          <a href="index.html" class="backToMain">Назад на главную</a>
-          <div>
-            <h2 class="modal-body-title">Авторизация</h2>
-            <input type="text" class="loggin__input" placeholder="E-mail"> <br>
-            <input type="text" class="loggin__input2" placeholder="Пароль"> <br>
-            <p class="loggin__forget">Забыли пароль ?</p>
-            <button class="loggin__button btn-gold btn-large">Войти</button>
-            <div class="question">
-              <p class="text">Нету аккаунта ?</p>
-              <button id="modal-goToRegistrationBtn" class="text1">Регистрация</button>
-            </div>
+      <div class="container">
+        <a href="index.html" class="backToMain">Назад на главную</a>
+        <div class=" modal-body">
+          <form class="modal-form">
+            <h2 class="modal-form__title">Авторизация</h2>
+            <input type="text" class="modal-form__input" placeholder="E-mail">
+            <input type="text" class="modal-form__input" placeholder="Пароль">
+            <p class="modal-form__recover-password">Забыли пароль ?</p>
+            <button class="modal-form__btn btn-gold btn-large">Войти</button>
+          </form>
+          <div class="modal-auth">
+            <p>Нету аккаунта ?</p>
+            <button id="modal-goToRegistrationBtn">Регистрация</button>
           </div>
         </div>
       </div>

@@ -47,19 +47,19 @@
         <img class="logo" src="./src/images/modal/logo.png" alt="logo">
         <button type="button" class="btn modal-close-btn">&times;</button>
       </div>
-      <div class="modal-body">
-        <div class="loggin">
-          <a href="index.html" class="main-btn">Назад на главную</a>
-          <div>
-            <h2>Авторизация</h2>
-            <input type="text" class="loggin__input" placeholder="E-mail"> <br>
-            <input type="text" class="loggin__input2" placeholder="Пароль"> <br>
+      <div class="container">
+        <a href="index.html" class="main-btn">Назад на главную</a>
+        <div class="modal-body">
+          <form class="modal-form">
+            <h2 class="modal-form__title">Авторизация</h2>
+            <input type="text" class="loggin__input" placeholder="E-mail">
+            <input type="text" class="loggin__input" placeholder="Пароль">
             <p>Забыли пароль ?</p>
             <button class="loggin__button btn-gold btn-large">Войти</button>
-            <div class="question">
-              <p class="text">Нету аккаунта ?</p>
-              <button id="modal-goToRegistrationBtn" class="text1">Регистрация</button>
-            </div>
+          </form>
+          <div class="modal-auth">
+            <p>Нету аккаунта ?</p>
+            <button id="modal-goToRegistrationBtn">Регистрация</button>
           </div>
         </div>
       </div>
