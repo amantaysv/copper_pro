@@ -1212,11 +1212,11 @@ button {
   position: absolute;
   top: 35px;
   left: 0px;
-  width: 60px;
+  width: 59px;
   height: 1px;
   background: gray;
-  -webkit-transform: rotate(9deg);
-          transform: rotate(9deg);
+  -webkit-transform: rotate(8deg);
+          transform: rotate(8deg);
 }
 
 .basket .price__pr {
