@@ -131,10 +131,11 @@
     }
 
     &__boxtotal {
-        background-color: lightblue;
+        background-color: #ffffff;
         width: 446px;
         height: 332px;
-        box-shadow: 40px, 0, 0, 0, rgba(0, 0, 0, 0.05);
+        border: 1px solid #A1A1A1;
+        box-shadow: 40px, 0, 0, 0, rgba(0, 0, 0, 0.5);
 
         &_total {
             position: relative;
