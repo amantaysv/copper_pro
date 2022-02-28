@@ -1,303 +1,316 @@
 .modal {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 11;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  &.active {
+    display: flex;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background: rgba(255, 255, 255, 0.95);
     width: 100vw;
-    z-index: 11;
-    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    animation-name: modalopen;
+    animation-duration: 1s;
+  }
+
+  &-header {
+    position: relative;
+    background: linear-gradient(285.45deg, #0B3F37 38.27%, #CB8D62 141.81%);
+    text-align: center;
+    padding: 20px;
+
+    &-close-btn {
+      color: #fff;
+      font-size: 30px;
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+
+    &-logo {
+      width: 100px;
+      margin: 5px 0 5px 0;
+    }
+  }
+
+  &-body {
+    padding: 10px 10px;
+    text-align: center;
+
+    &__img1 {
+      width: 150px;
+      padding-top: 35px;
+      margin-left: 80px;
+    }
+
+    &__img2 {
+      position: absolute;
+      width: 150px;
+      left: 485px;
+      top: 110px;
+    }
+
+
+    &-title {
+      font-family: Lighthaus;
+      font-weight: normal;
+      font-size: 28px;
+      color: #031412;
+      margin: 15px 0 15px 0;
+      padding: 0;
+    }
+
+    p {
+      font-size: 18px;
+      color: #031412;
+      margin: 0;
+      padding: 20px 0 20px 0;
+    }
+
+    &__button {
+      background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+      width: 300px;
+      height: 40px;
+      padding: 0 2em;
+      color: #fff;
+      margin-bottom: 60px;
+
+      &:hover {
+        background: #333;
+      }
+
+    }
+
+    .loggin {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+
+      .backToMain {
+        position: absolute;
+        width: 300px;
+        left: 100px;
+        top: 140px;
+        background: #FFFFFF;
+        border: 1px solid #A1A1A1;
+        font-weight: 600;
+        font-size: 16px;
+        color: #A1A1A1;
+        padding: 15px 0 15px 0;
+      }
+
+      div {
+        width: 350px;
+        background: #fff;
+      }
+
+      h3 {
+        font-family: Lighthaus;
+        font-size: 42px;
+        text-align: center;
+        color: #031412;
+        margin: 15px 0 15px 0;
+      }
+
+      &__input {
+        max-width: 300px;
+        width: 100%;
+        margin-bottom: 20px;
+        min-height: 50px;
+        font-size: 16px;
+        padding: 0 0 0 10px;
+        color: #A1A1A1;
+        border: 1px solid #A1A1A1;
+
+        &::placeholder {
+          color: #78808F;
+        }
+      }
+
+      &__input2 {
+        max-width: 300px;
+        width: 100%;
+        min-height: 50px;
+        font-size: 16px;
+        padding: 0 0 0 10px;
+        color: #A1A1A1;
+        border: 1px solid #A1A1A1;
+
+        &::placeholder {
+          color: #78808F;
+        }
+      }
+
+      &__input3 {
+        max-width: 300px;
+        width: 100%;
+        margin: 20px 0 20px 0;
+        min-height: 50px;
+        font-size: 16px;
+        padding: 0 0 0 10px;
+        color: #A1A1A1;
+        border: 1px solid #A1A1A1;
+
+        &::placeholder {
+          color: #78808F;
+        }
+      }
+
+      &__forget {
+        font-size: 18px;
+        text-align: center;
+        text-decoration-line: underline;
+        background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+      }
+
+      &__button {
+        background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+        max-width: 300px;
+        width: 100%;
+        color: #fff;
+        padding: 10px 0 10px 0;
+        font-size: 16px;
+        border: 0;
+
+        &:hover {
+          background: #333;
+        }
+      }
+
+      .question {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 350px;
+        padding: 0;
+        margin: 20px 0 0 0px;
+        background: linear-gradient(285.45deg, #0B3F37 38.27%, #CB8D62 141.81%);
+
+        .text {
+          font-size: 16px;
+          color: #FFFFFF;
+        }
+
+        .text1 {
+          font-size: 16px;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+
+  &-footer {
+    background: linear-gradient(285.45deg, #0B3F37 38.27%, #CB8D62 141.81%);
+    padding: 20px;
+    text-align: center;
+
+    .logo {
+      width: 100px;
+      margin: 10px 0 5px 0;
+    }
+
+    p {
+      margin-bottom: 10px;
+      font-size: 12px;
+      text-align: center;
+      color: #ADADAD;
+    }
+  }
+
+
+  @keyframes modalopen {
+    from {
+      opacity: 0
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 996px;
+  }
+
+  .modal-body .loggin .backToMain {
+    left: 4%;
+    border: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
     display: none;
-    justify-content: center;
-    align-items: center;
+  }
 
-    &.active {
-        display: flex;
-    }
+  .modal-body {
+    padding: 0 15px;
+  }
 
-    &-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        position: relative;
-        background: rgba(255, 255, 255, 0.95);
-        width: 100vw;
-        height: 100vh;
-        animation-name: modalopen;
-        animation-duration: 1s;
-    }
+  .modal-body .loggin div {
+    width: 290px;
+  }
 
-    &-header {
-        position: relative;
-        background: linear-gradient(285.45deg, #0B3F37 38.27%, #CB8D62 141.81%);
-        text-align: center;
-        padding: 20px;
+  .modal-body .loggin .backToMain {
+    left: 4%;
+    width: 290px;
+    border: none;
+    top: 110px;
+  }
 
-        &-close-btn {
-            color: #fff;
-            font-size: 30px;
-            position: absolute;
-            top: 50%;
-            right: 20px;
-            transform: translateY(-50%);
-            &:hover,
-            &:focus {
-                text-decoration: none;
-                cursor: pointer;
-            }
-        }
-        &-logo {
-            width: 100px;
-            margin: 5px 0 5px 0;
-        }
-    }
+  .modal-body .loggin__input {
+    width: 250px;
+    margin: 30px 0 20px 0;
+  }
 
-    &-body {
-        padding: 10px 10px;
-        text-align: center;
+  .modal-body .loggin__input2 {
+    width: 250px;
+    margin-bottom: 20px;
+  }
 
-        &__img1 {
-            width: 150px;
-            padding-top: 35px;
-            margin-left: 80px;
-        }
+  .modal-body .loggin__input3 {
+    width: 250px;
+    margin-bottom: 20px;
+  }
 
-        &__img2 {
-            position: absolute;
-            width: 150px;
-            left: 485px;
-            top: 110px;
-        }
+  .modal-body .loggin .question {
+    width: 290px;
+  }
 
+  .modal-body-title {
+    margin: 30px 0 0 0;
+  }
 
-        &-title {
-            font-family: Lighthaus;
-            font-weight: normal;
-            font-size: 28px;
-            color: #031412;
-            margin: 15px 0 15px 0;
-            padding: 0;
-        }
-
-        p {
-            font-size: 18px;
-            color: #031412;
-            margin: 0;
-            padding: 20px 0 20px 0;
-        }
-
-        &__button {
-            background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
-            width: 300px;
-            height: 40px;
-            padding: 0 2em;
-            color: #fff;
-            margin-bottom: 60px;
-
-            &:hover {
-                background: #333;
-            }
-
-        }
-
-        .loggin {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 0;
-            margin: 0;
-
-            .backToMain {
-                position: absolute;
-                width: 300px;
-                left: 100px;
-                top: 140px;
-                background: #FFFFFF;
-                border: 1px solid #A1A1A1;
-                font-weight: 600;
-                font-size: 16px;
-                color: #A1A1A1;
-                padding: 15px 0 15px 0;
-            }
-
-            div {
-                width: 350px;
-                background: #fff;
-            }
-
-            h3 {
-                font-family: Lighthaus;
-                font-size: 42px;
-                text-align: center;
-                color: #031412;
-                margin: 15px 0 15px 0;
-            }
-
-            &__input {
-                max-width: 300px;
-                width: 100%;
-                margin-bottom: 20px;
-                min-height: 50px;
-                font-size: 16px;
-                padding: 0 0 0 10px;
-                color: #A1A1A1;
-                border: 1px solid #A1A1A1;
-
-                &::placeholder {
-                    color: #78808F;
-                }
-            }
-
-            &__input2 {
-                max-width: 300px;
-                width: 100%;
-                min-height: 50px;
-                font-size: 16px;
-                padding: 0 0 0 10px;
-                color: #A1A1A1;
-                border: 1px solid #A1A1A1;
-
-                &::placeholder {
-                    color: #78808F;
-                }
-            }
-
-            &__input3 {
-                max-width: 300px;
-                width: 100%;
-                margin: 20px 0 20px 0;
-                min-height: 50px;
-                font-size: 16px;
-                padding: 0 0 0 10px;
-                color: #A1A1A1;
-                border: 1px solid #A1A1A1;
-
-                &::placeholder {
-                    color: #78808F;
-                }
-            }
-
-            &__forget {
-                font-size: 18px;
-                text-align: center;
-                text-decoration-line: underline;
-                background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
-                
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-
-            }
-
-            &__button {
-                background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
-                max-width: 300px;
-                width: 100%;
-                color: #fff;
-                padding: 10px 0 10px 0;
-                font-size: 16px;
-                border: 0;
-
-                &:hover {
-                    background: #333;
-                }
-            }
-
-            .question {
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                width: 350px;
-                padding: 0;
-                margin: 20px 0 0 0px;
-                background: linear-gradient(285.45deg, #0B3F37 38.27%, #CB8D62 141.81%);
-
-                .text {
-                    font-size: 16px;
-                    color: #FFFFFF;
-                }
-
-                .text1 {
-                    font-size: 16px;
-                    color: #FFFFFF;
-                }
-            }
-        }
-    }
-
-    &-footer {
-        background: linear-gradient(285.45deg, #0B3F37 38.27%, #CB8D62 141.81%);
-        padding: 20px;
-        text-align: center;
-
-        .logo {
-            width: 100px;
-            margin: 10px 0 5px 0;
-        }
-
-        p {
-            margin-bottom: 10px;
-            font-size: 12px;
-            text-align: center;
-            color: #ADADAD;
-        }
-    }
-
-
-    @keyframes modalopen {
-        from {
-            opacity: 0
-        }
-
-        to {
-            opacity: 1
-        }
-    }
-}
-
-@media (max-width: 1200px){
-    .container{
-        max-width: 996px;
-    }
-    .modal-body .loggin .backToMain{
-        left: 4%;
-        border: none;
-    }
-}
-@media (max-width: 375px){
-    .container{
-        display: none;
-    }
-    .modal-body{
-        padding: 0 15px;
-    }
-    .modal-body .loggin div{
-        width: 290px;
-    }
-    .modal-body .loggin .backToMain{
-        left: 4%;
-        width: 290px;
-        border: none;
-        top: 110px;
-    }
-    .modal-body .loggin__input{
-        width: 250px;
-        margin: 30px 0 20px 0;
-    }
-    .modal-body .loggin__input2{
-        width: 250px;
-        margin-bottom: 20px;
-    }
-    .modal-body .loggin__input3{
-        width: 250px;
-        margin-bottom: 20px;
-    }
-    .modal-body .loggin .question{
-        width: 290px;
-    }
-    .modal-body-title{
-        margin: 30px 0 0 0;
-    }
-    .modal-body .loggin__button{
-        max-width: 250px;
-        padding: 0 0 10px 0;
-    }
+  .modal-body .loggin__button {
+    max-width: 250px;
+    padding: 0 0 10px 0;
+  }
 }

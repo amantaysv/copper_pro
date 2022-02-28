@@ -1461,8 +1461,6 @@ button {
   /* identical to box height, or 29px */
   color: #031412;
 }
-<<<<<<< HEAD
-=======
 
 @media (max-width: 760px) {
   .catalog {
@@ -1516,5 +1514,3 @@ button {
     font-size: 24px;
   }
 }
->>>>>>> origin/master
-/*# sourceMappingURL=index.css.map */
