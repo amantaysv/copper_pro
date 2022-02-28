@@ -1251,6 +1251,10 @@ button {
   color: #fff;
 }
 
+.basket__btnback {
+  margin-top: 20px;
+}
+
 .basket__btnback button {
   font-weight: 800;
   font-size: 18px;
