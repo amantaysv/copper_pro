@@ -1,5 +1,5 @@
 .aboutHome {
-    padding-top: 40px;
+    padding-top: 200px;
 
     &__nav {
         margin-bottom: 5px;
@@ -95,7 +95,7 @@
 }
 
 .aboutСlientes {
-    padding: 150px 0 200px;
+    padding: 150px 0 140px;
 
     &__row {
         display: flex;
@@ -133,7 +133,7 @@
             font-weight: 900;
             font-size: 50px;
             line-height: 96.4%;
-            background: linear-gradient(#5E3928 100%, #E4A16F 100%);
+            background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -146,6 +146,80 @@
             font-size: 225px;
             line-height: 96.4%;
             color: rgba(0, 0, 0, 0.3);
+            background: url(../images/about-us/nature.png);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
+}
+
+.aboutHistory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    background: url(../images/about-us/abouthistory/fon.png);
+    position: relative;
+    height: 626px;
+    &__copper-pro {
+        position: absolute;
+        left: 0px;
+        bottom: 0;
+
+    h1 {
+        font-family: 'Lighthaus', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 150px;
+        line-height: 74.9%;
+        color: red;
+        writing-mode: vertical-rl;
+        transform: rotate(-180deg);
+        
+    }
+
+}
+
+h2 {
+    text-align: center;
+    font-family: Lighthaus;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 105.9%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+&__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .aboutHistory__left {
+        display: flex;
+        padding: 28px 0 0;
+        column-gap: 31px;
+
+        p {
+            width: 445px;
+            font-family: 'Mont', sans-serif;
+            font-size: 16px;
+            line-height: 132.4%;
+            color: #FFFFFF;
+        }
+    }
+
+    .aboutHistory__right {
+        padding: 28px 0 0;
+
+        p {
+            width: 445px;
+            font-family: 'Mont', sans-serif;
+            font-size: 16px;
+            line-height: 132.4%;
+            color: #FFFFFF;
+        }
+    }
+}
 }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(../fonts/Mont/stylesheet.css);
 @import url(../fonts/lighthaus/style.css);
 @import url(../libs/slick/slick.css);
@@ -1669,5 +1670,260 @@ button {
   .catalog .price {
     font-size: 24px;
   }
+}
+
+.aboutHome {
+  padding-top: 200px;
+}
+
+.aboutHome__nav {
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 5px;
+          column-gap: 5px;
+  font-family: "Mont", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 96.4%;
+  color: #031412;
+}
+
+.aboutHome__nav p {
+  font-weight: bold;
+}
+
+.aboutHome__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutHome__title {
+  font-family: 'Lighthaus', sans-serif;
+  font-size: 100px;
+  font-weight: normal;
+  line-height: 74.9%;
+  color: #031412;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.aboutHome__title::before {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 623px;
+  height: 1px;
+  background-color: #031412;
+}
+
+.aboutHome__subtitle {
+  padding-left: 75px;
+  width: 100%;
+  font-family: 'Mont', sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 96.4%;
+  position: relative;
+  background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.aboutHome__subtitle::before {
+  content: url(../images/about-us/union.svg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.aboutHome__subtitle::after {
+  content: url(../images/about-us/union.svg);
+  position: absolute;
+  right: 50px;
+  bottom: -10px;
+}
+
+.aboutHome__name {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Mont', sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 96.4%;
+}
+
+.aboutHome__name p {
+  width: 170px;
+  background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.aboutHome__name img {
+  padding-left: 40px;
+}
+
+.aboutСlientes {
+  padding: 150px 0 140px;
+}
+
+.aboutСlientes__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 182px;
+          column-gap: 182px;
+  padding-top: 20px;
+}
+
+.aboutСlientes__left h1 {
+  width: 50px;
+  text-transform: uppercase;
+  font-family: 'Lighthaus', sans-serif;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 105.9%;
+  color: #031412;
+}
+
+.aboutСlientes__left p {
+  padding-top: 23px;
+  width: 517px;
+  font-family: 'Mont', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 124.9%;
+  color: #031412;
+}
+
+.aboutСlientes__right h2 {
+  font-family: 'Mont', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 96.4%;
+  background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.aboutСlientes__right span {
+  padding-top: 25px;
+  font-family: 'Mont', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 225px;
+  line-height: 96.4%;
+  color: rgba(0, 0, 0, 0.3);
+  background: url(../images/about-us/nature.png);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.aboutHistory {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 80px;
+  background: url(../images/about-us/abouthistory/fon.png);
+  position: relative;
+  height: 626px;
+}
+
+.aboutHistory__copper-pro {
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+}
+
+.aboutHistory__copper-pro h1 {
+  font-family: 'Lighthaus', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 150px;
+  line-height: 74.9%;
+  color: red;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.aboutHistory h2 {
+  text-align: center;
+  font-family: Lighthaus;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 105.9%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.aboutHistory__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutHistory__row .aboutHistory__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 28px 0 0;
+  -webkit-column-gap: 31px;
+          column-gap: 31px;
+}
+
+.aboutHistory__row .aboutHistory__left p {
+  width: 445px;
+  font-family: 'Mont', sans-serif;
+  font-size: 16px;
+  line-height: 132.4%;
+  color: #FFFFFF;
+}
+
+.aboutHistory__row .aboutHistory__right {
+  padding: 28px 0 0;
+}
+
+.aboutHistory__row .aboutHistory__right p {
+  width: 445px;
+  font-family: 'Mont', sans-serif;
+  font-size: 16px;
+  line-height: 132.4%;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=index.css.map */
