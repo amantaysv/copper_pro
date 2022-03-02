@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url(../fonts/Mont/stylesheet.css);
 @import url(../fonts/lighthaus/style.css);
 @import url(../libs/slick/slick.css);
@@ -228,13 +227,10 @@ button {
   background: linear-gradient(285.45deg, #0B3F37 38.27%, #CB8D62 141.81%);
   color: #fff;
   width: 100%;
-<<<<<<< HEAD
-=======
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
->>>>>>> origin/master
 }
 
 .header.transparent {
@@ -485,37 +481,6 @@ button {
   text-align: right;
 }
 
-<<<<<<< HEAD
-.aboutHome {
-  padding-top: 40px;
-}
-
-.aboutHome__nav {
-  margin-bottom: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-column-gap: 5px;
-          column-gap: 5px;
-  font-family: "Mont", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 96.4%;
-  color: #031412;
-}
-
-.aboutHome__nav p {
-  font-weight: bold;
-}
-
-.aboutHome__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-=======
 .modal {
   position: fixed;
   left: 0;
@@ -528,53 +493,11 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
->>>>>>> origin/master
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-<<<<<<< HEAD
-.aboutHome__title {
-  font-family: 'Lighthaus', sans-serif;
-  font-size: 100px;
-  font-weight: normal;
-  line-height: 74.9%;
-  color: #031412;
-  margin-bottom: 100px;
-  position: relative;
-}
-
-.aboutHome__title::before {
-  content: '';
-  position: absolute;
-  bottom: -50px;
-  left: 0;
-  width: 623px;
-  height: 1px;
-  background-color: #031412;
-}
-
-.aboutHome__subtitle {
-  padding-left: 75px;
-  width: 100%;
-  font-family: 'Mont', sans-serif;
-  font-style: italic;
-  font-weight: 600;
-  font-size: 50px;
-  line-height: 96.4%;
-  position: relative;
-  background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.aboutHome__subtitle::before {
-  content: url(../images/about-us/union.svg);
-  position: absolute;
-  left: 0;
-  top: 0;
-=======
 .modal.active {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -628,37 +551,10 @@ button {
   position: absolute;
   top: 50%;
   right: 20px;
->>>>>>> origin/master
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
-<<<<<<< HEAD
-.aboutHome__subtitle::after {
-  content: url(../images/about-us/union.svg);
-  position: absolute;
-  right: 50px;
-  bottom: -10px;
-}
-
-.aboutHome__name {
-  padding-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: 'Mont', sans-serif;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 96.4%;
-}
-
-.aboutHome__name p {
-  width: 170px;
-  background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
-=======
 .modal-header-close-btn:hover, .modal-header-close-btn:focus {
   text-decoration: none;
   cursor: pointer;
@@ -766,22 +662,10 @@ button {
   text-align: center;
   text-decoration: underline;
   background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
->>>>>>> origin/master
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-<<<<<<< HEAD
-.aboutHome__name img {
-  padding-left: 40px;
-}
-
-.aboutСlientes {
-  padding: 70px 0;
-}
-
-.aboutСlientes__row {
-=======
 .modal-form__recover-password::before {
   content: "";
   position: absolute;
@@ -807,35 +691,12 @@ button {
 
 .modal-auth {
   width: 100%;
->>>>>>> origin/master
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-<<<<<<< HEAD
-  padding-top: 20px;
-}
-
-.aboutСlientes__left h1 {
-  width: 50px;
-  text-transform: uppercase;
-  font-family: 'Lighthaus', sans-serif;
-  font-size: 30px;
-  font-weight: normal;
-  color: #031412;
-}
-
-.aboutСlientes__left p {
-  padding-top: 20px;
-  width: 400px;
-}
-
-.aboutСlientes__right h1 {
-  font-size: 150px;
-  line-height: 100%;
-=======
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1808,6 +1669,5 @@ button {
   .catalog .price {
     font-size: 24px;
   }
->>>>>>> origin/master
 }
 /*# sourceMappingURL=index.css.map */

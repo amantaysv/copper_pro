@@ -95,10 +95,11 @@
 }
 
 .aboutСlientes {
-    padding: 70px 0;
+    padding: 150px 0 200px;
+
     &__row {
         display: flex;
-        justify-content: space-between;
+        column-gap: 182px;
         padding-top: 20px;
     }
 
@@ -107,21 +108,44 @@
             width: 50px;
             text-transform: uppercase;
             font-family: 'Lighthaus', sans-serif;
-            font-size: 30px;
             font-weight: normal;
+            font-size: 50px;
+            line-height: 105.9%;
             color: #031412;
         }
 
         p {
-            padding-top: 20px;
-            width: 400px;
+            padding-top: 23px;
+            width: 517px;
+            font-family: 'Mont', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 124.9%;
+            color: #031412;
         }
     }
 
     &__right {
-        h1 {
-            font-size: 150px;
-            line-height: 100%;
+        h2 {
+            font-family: 'Mont', sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 50px;
+            line-height: 96.4%;
+            background: linear-gradient(#5E3928 100%, #E4A16F 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        span {
+            padding-top: 25px;
+            font-family: 'Mont', sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 225px;
+            line-height: 96.4%;
+            color: rgba(0, 0, 0, 0.3);
         }
     }
 }
