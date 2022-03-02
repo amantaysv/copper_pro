@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>modal</title>
+</head>
+
+<body>
+  <!-- registration -->
+  <div id="modal-registration" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img class="logo" src="./src/images/modal/logo.png" alt="logo">
+        <button type="button" class="btn modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="loggin">
+          <a href="index.html" class="main-btn">Назад на главную</a>
+          <div>
+            <h2>Регистрация</h2>
+            <input type="text" class="loggin__input" placeholder="E-mail"> <br>
+            <input type="text" class="loggin__input2" placeholder="Пароль"> <br>
+            <input type="text" class="loggin__input3" placeholder="Повторите пароль">
+            <button class="loggin__button btn-gold btn-large">Регистрация</button>
+            <div class="question">
+              <p class="text">Есть аккаунт ?</p>
+              <button id="modal-goToLoginBtn" class="text1">Войти</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <img class="logo" src="./src/images/modal/logo.png" alt="logo">
+        <p>© 2021 “Copper Pro” <br>
+          Все права защищенны</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- login  -->
+  <div id="modal-login" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img class="logo" src="./src/images/modal/logo.png" alt="logo">
+        <button type="button" class="btn modal-close-btn">&times;</button>
+      </div>
+      <div class="container">
+        <a href="index.html" class="main-btn">Назад на главную</a>
+        <div class="modal-body">
+          <form class="modal-form">
+            <h2 class="modal-form__title">Авторизация</h2>
+            <input type="text" class="loggin__input" placeholder="E-mail">
+            <input type="text" class="loggin__input" placeholder="Пароль">
+            <p>Забыли пароль ?</p>
+            <button class="loggin__button btn-gold btn-large">Войти</button>
+          </form>
+          <div class="modal-auth">
+            <p>Нету аккаунта ?</p>
+            <button id="modal-goToRegistrationBtn">Регистрация</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <img class="logo" src="./src/images/modal/logo.png" alt="logo">
+        <p>© 2021 “Copper Pro” <br>
+          Все права защищенны</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- thanks -->
+  <div id="modal-thanks" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img class="logo" src="./src/images/modal/logo.png" alt="logo">
+        <button type="button" class="btn modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div>
+          <img class="modal-body__img1" src="./src/images/modal/somovar.png" alt="samovar">
+          <img class="modal-body__img2" src="./src/images/modal/tick.png" alt="tick">
+        </div>
+        <h2>Спасибо за заказ</h2>
+        <p>Мы свяжемся с вами <br> в ближайшее время</p>
+        <button class="modal-body__button"> Главная</button>
+      </div>
+      <div class="modal-footer">
+        <img class="logo" src="./src/images/modal/logo.png" alt="logo">
+        <p>© 2021 “Copper Pro” <br>
+          Все права защищенны</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

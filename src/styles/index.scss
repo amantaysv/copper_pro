@@ -50,8 +50,17 @@ button {
   display: inline-block;
   font-weight: 800;
   font-size: 18px;
+  background-color: transparent;
 }
-
+@import "./variables";
 @import './header';
 @import './home';
+<<<<<<< HEAD
 @import './about-us';
+=======
+@import './modal';
+@import './news';
+@import './productcard';
+@import './card-product';
+@import './catalog';
+>>>>>>> origin/master
