@@ -1,7 +1,6 @@
 // modal
 const loginModal = document.getElementById('modal-login')
 const registrationModal = document.getElementById('modal-registration')
-const thanksModal = document.getElementById('modal-thanks')
 const modalBtn = document.getElementById('modalBtn')
 const modalGoToLoginBtn = document.getElementById('modal-goToLoginBtn')
 const modalGoToRegistrationBtn = document.getElementById('modal-goToRegistrationBtn')
@@ -15,7 +14,6 @@ for (const btn of closeBtns) {
   btn.addEventListener('click', () => {
     removeClass(loginModal)
     removeClass(registrationModal)
-    removeClass(thanksModal)
   })
 }
 
@@ -25,9 +23,6 @@ document.addEventListener('click', (e) => {
   }
   if (e.target === registrationModal) {
     removeClass(registrationModal)
-  }
-  if (e.target === thanksModal) {
-    removeClass(thanksModal)
   }
 })
 

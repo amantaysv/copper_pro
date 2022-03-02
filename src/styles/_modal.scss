@@ -29,11 +29,11 @@
   .backToMain {
     max-width: 300px;
     width: 100%;
-    background: #FFFFFF;
-    border: 1px solid #A1A1A1;
+    background: #ffffff;
+    border: 1px solid #a1a1a1;
     font-weight: 600;
     font-size: 16px;
-    color: #A1A1A1;
+    color: #a1a1a1;
     padding: 15px 0;
     text-align: center;
     margin-bottom: 50px;
@@ -41,7 +41,7 @@
 
   &-header {
     position: relative;
-    background: linear-gradient(285.45deg, #0B3F37 38.27%, #CB8D62 141.81%);
+    background: linear-gradient(285.45deg, #0b3f37 38.27%, #cb8d62 141.81%);
     text-align: center;
     padding: 20px;
 
@@ -77,19 +77,6 @@
     margin: 0 auto;
     text-align: center;
     background-color: #fff;
-
-    &__img1 {
-      width: 150px;
-      padding-top: 35px;
-      margin-left: 80px;
-    }
-
-    &__img2 {
-      position: absolute;
-      width: 150px;
-      left: 485px;
-      top: 110px;
-    }
   }
 
   &-form {
@@ -100,11 +87,31 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    position: relative;
 
-    &__title {
+    &__img1 {
+      position: absolute;
+      width: 224.15px;
+      height: 315.5px;
+      left: 0;
+      top: 0;
+    }
+
+    &__img2 {
+      position: absolute;
+      width: 212px;
+      height: 169px;
+    }
+
+    &__thanks_title {
       font-family: "Lighthaus";
       font-weight: normal;
-      font-size: 28px;
+      font-size: 50px;
+      color: #031412;
+    }
+
+    &__desc {
+      font-size: 27px;
       color: #031412;
     }
 
@@ -113,11 +120,11 @@
       min-height: 50px;
       font-size: 16px;
       padding-left: 10px;
-      color: #A1A1A1;
-      border: 1px solid #A1A1A1;
+      color: #a1a1a1;
+      border: 1px solid #a1a1a1;
 
       &::placeholder {
-        color: #78808F;
+        color: #78808f;
       }
     }
 
@@ -126,19 +133,19 @@
       font-size: 18px;
       text-align: center;
       text-decoration: underline;
-      background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+      background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
 
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
         height: 1px;
-        background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+        background: linear-gradient(92.18deg, #5e3928 20.13%, #e4a16f 92.93%);
       }
     }
 
@@ -162,21 +169,21 @@
     justify-content: space-between;
     align-items: center;
     padding: 25px 35px;
-    background: linear-gradient(285.45deg, #0B3F37 38.27%, #CB8D62 141.81%);
+    background: linear-gradient(285.45deg, #0b3f37 38.27%, #cb8d62 141.81%);
 
     p {
       font-size: 16px;
-      color: #FFFFFF;
+      color: #ffffff;
     }
 
     button {
       font-size: 16px;
-      color: #FFFFFF;
+      color: #ffffff;
     }
   }
 
   &-footer {
-    background: linear-gradient(285.45deg, #0B3F37 38.27%, #CB8D62 141.81%);
+    background: linear-gradient(285.45deg, #0b3f37 38.27%, #cb8d62 141.81%);
     padding: 20px;
     text-align: center;
 
@@ -189,18 +196,70 @@
       margin-bottom: 10px;
       font-size: 12px;
       text-align: center;
-      color: #ADADAD;
+      color: #adadad;
+    }
+  }
+  &-thanks {
+    &-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 37px;
+      max-width: 478px;
+      margin: 0 auto;
+    }
+    &__img-group {
+      position: relative;
+    }
+    &__img1 {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-35px);
+      max-width: 130px;
+      width: 100%;
+    }
+    &__img2 {
+      position: relative;
+      z-index: 1;
+      transform: translateX(-35px);
+      max-width: 200px;
+      width: 100%;
+    }
+    &__title {
+      font-family: Lighthaus;
+      font-weight: normal;
+      font-size: 50px;
+      line-height: 105.9%;
+      text-align: center;
+      color: #031412;
+    }
+    &__desc {
+      max-width: 346px;
+      font-family: Mont;
+      font-weight: 600;
+      font-size: 27px;
+      line-height: 96.4%;
+      text-align: center;
+      color: #031412;
+    }
+    &__btn.btn-large {
+      max-width: 446px;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 50px;
+text-align: center;
     }
   }
 }
 
 @keyframes modalopen {
   from {
-    opacity: 0
+    opacity: 0;
   }
 
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
