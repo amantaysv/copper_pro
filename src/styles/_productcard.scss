@@ -138,6 +138,11 @@
     }
 
     &__buy-btn {
+      .btn-large{
+        width: 446px;
+        height: 50px;
+      }
+      
       width: 100%;
       display: flex;
       justify-content: flex-end;

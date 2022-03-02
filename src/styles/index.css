@@ -987,6 +987,11 @@ button {
   margin-bottom: 20px;
 }
 
+.cardochki-feature__buy-btn .btn-large {
+  width: 446px;
+  height: 50px;
+}
+
 .cardochki-feature__share {
   display: -webkit-box;
   display: -ms-flexbox;
