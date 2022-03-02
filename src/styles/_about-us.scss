@@ -1,0 +1,127 @@
+.aboutHome {
+    padding-top: 40px;
+
+    &__nav {
+        margin-bottom: 5px;
+        display: flex;
+        column-gap: 5px;
+        font-family: "Mont", sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 96.4%;
+        color: #031412;
+
+        p {
+            font-weight: bold;
+        }
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &__title {
+        font-family: 'Lighthaus', sans-serif;
+        font-size: 100px;
+        font-weight: normal;
+        line-height: 74.9%;
+        color: #031412;
+        margin-bottom: 100px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            width: 623px;
+            height: 1px;
+            background-color: #031412;
+        }
+    }
+
+    &__subtitle {
+        padding-left: 75px;
+        width: 100%;
+        font-family: 'Mont', sans-serif;
+        font-style: italic;
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 96.4%;
+        position: relative;
+        background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &::before {
+            content: url(../images/about-us/union.svg);
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: translateY(-50%);
+        }
+
+        &::after {
+            content: url(../images/about-us/union.svg);
+            position: absolute;
+            right: 50px;
+            bottom: -10px;
+        }
+    }
+
+    &__name {
+        padding-top: 50px;
+        display: flex;
+        align-items: center;
+        font-family: 'Mont', sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 96.4%;
+
+        p {
+            width: 170px;
+            background: linear-gradient(92.18deg, #5E3928 20.13%, #E4A16F 92.93%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        img {
+            padding-left: 40px;
+        }
+    }
+}
+
+.aboutСlientes {
+    padding: 70px 0;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+
+    &__left {
+        h1 {
+            width: 50px;
+            text-transform: uppercase;
+            font-family: 'Lighthaus', sans-serif;
+            font-size: 30px;
+            font-weight: normal;
+            color: #031412;
+        }
+
+        p {
+            padding-top: 20px;
+            width: 400px;
+        }
+    }
+
+    &__right {
+        h1 {
+            font-size: 150px;
+            line-height: 100%;
+        }
+    }
+}
